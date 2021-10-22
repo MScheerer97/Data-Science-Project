@@ -5,10 +5,9 @@
 [About The Project](#about-the-project)  
 [Project Approach](#project-approach)  
 
-
-![alt text](https://images.squarespace-cdn.com/content/v1/54f9ea6be4b0251d5319ad8b/1580983382125-7PJ28XQHWYX1FS0A8X1J/Data+Science.png?format=175w "Data Science") 
-
-
+<p align="center">
+  <img width="200" src="https://images.squarespace-cdn.com/content/v1/54f9ea6be4b0251d5319ad8b/1580983382125-7PJ28XQHWYX1FS0A8X1J/Data+Science.png" alt="Data Science">
+</p>
 
 ### Team Members
   * [Lana Kern](http://github.com)
