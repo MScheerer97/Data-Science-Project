@@ -33,11 +33,17 @@ Hence, our central aim is to gather data from various sources, prepare a clean d
 
 We compare different models for prediction and finally decide which model is most appropriate for real world usage. Our goal is to illustrate our results by hosting a __R Shiny App__ and making it publicly available.
 
+### Project Approach
 
-
-
-
-
+1. Data Acquisition
+2. Data Preparation
+3. Data Analysis
+   1. Descriptive Statistics
+   2. Price Prediction
+      1. Naive Regression Model
+      2. Random Forest Regression
+      3. Neural Network
+  
 
 
 
