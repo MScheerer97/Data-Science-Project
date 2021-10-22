@@ -24,8 +24,9 @@
 
 
 ### About The Project
-Have you ever purchased some produce and then the next week the price plummeted? As the Covid-19 pandemic has emphasized, in our contemporary world globalization and the resulting interconnectedness come with severe consequences for our markets. Travel restrictions have had significant influence on prices of various goods. Another infamous example is the 2021 Suez Canal obstruction caused by the grounding of Ever Given, a container ship [2021 Suez Canal Obstruction](https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction).\
-Hence, our central aim is to gather data from various sources, prepare a clean dataset and finally build **Machine Learning Models** to accurately **predict prices*** for different kinds of fruit and vegetable.
+Have you ever purchased some produce and then the next week the price plummeted? As the Covid-19 pandemic has emphasized, in our contemporary world globalization and the resulting interconnectedness come with severe consequences for our markets.\ 
+Travel restrictions have had significant influence on prices of various goods. Another infamous example is the 2021 Suez Canal obstruction caused by the grounding of Ever Given, a container ship [2021 Suez Canal Obstruction](https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction).\
+Hence, our central aim is to gather data from various sources, prepare a clean dataset and finally build **Machine Learning Models** to accurately **predict prices** for different kinds of fruit and vegetable.
 
 
 
