@@ -10,7 +10,7 @@
 </p>
 
 ### Team Members
-  * [Lana Kern](http://github.com)
+  * [Lana Kern](https://github.com/lanakern)
   * [Martin Scheerer](https://github.com/MScheerer97)
   * [Michael Lyubkin](http://github.com)
 
