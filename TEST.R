@@ -1,4 +1,4 @@
-##### Data Science Project - Price Prediction of Fruits and Vegtables in Germany
+##### Data Science Project - Price Prediction of Fruits and Vegetables in Germany
 
 
 
@@ -6,6 +6,7 @@
 ## FoodData Central API
 
 # Libraries  --------------------------------------------------------------
+
 rm(list = ls())
 
 ## Now: load all necessary packages used throughout the R file
@@ -17,38 +18,59 @@ if (!require("jsonlite")) install.packages("jsonlite")
 library(httr)
 library(jsonlite)
 
-
 # Data Acquisition --------------------------------------------------------
 
 ## Food Nutrition Data - Using the FoodData Central API Guide by the 
 ## U.S. Department of Agriculture
 
-# 3600 requests per hour
-
 source("API Key.R")
 
-nutrition_url <- "https://api.nal.usda.gov/fdc/v1/foods/list?"
-nutrition_data <- GET(url = nutrition_url, query = list(api_Key = .key, pageNumber = 2))
+# A maximum of 200 results per page is possible
+# We start with page one and successively append the following pages
 
-cont <- content(nutrition_data, as = "text")
-new2 <- fromJSON(cont)
+page <- 1
+food_url <- "https://api.nal.usda.gov/fdc/v1/foods/list?"
 
+food_data <- GET(url = food_url, query = list(api_Key = .key, 
+                                              pageNumber = page, 
+                                              pageSize = 200, 
+                                              dataType = "SR Legacy"
+                                              )) 
+food_data$url
 
+cont <- content(food_data, as = "text")
+food <- fromJSON(cont)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+repeat { 
+  
+  page <- page + 1
+  food_data <- GET(url = food_url, query = list(api_Key = .key, 
+                                                pageNumber = page, 
+                                                pageSize = 200, 
+                                                dataType = "SR Legacy"))  
+  
+  if(food_data$status_code != 200) {
+    
+    print(page); print(food_data$status_code)
+    break
+    
+  }
+  
+  cont <- content(food_data, as = "text")
+  data <- fromJSON(cont)
+  
+  if(length(data) == 0){
+    
+    print(paste("Page number", page - 1, "is the last page."))
+    break
+    
+  }
+  
+  else {
+    
+    food <- rbind(food, data)
+    
+  }
+  # 3600 requests per hour
+  Sys.sleep(1)
+}
