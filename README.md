@@ -32,9 +32,13 @@ We compare different models for prediction and finally decide which model is mos
 
 ### Project Approach
 
-1. Data Acquisition
-2. Data Preparation
-3. Data Analysis
+#### 1. Data Acquisition
+To ensure data quality, we accessed the following reliable data sources for our project: 
+* The FoodData Central API: to obtain data on nutrients (macro, vitamins and minerals)
+* 
+
+#### 2. Data Preparation
+#### 3. Data Analysis
    1. Descriptive Statistics
    2. Price Prediction
       1. Naive Regression Model
