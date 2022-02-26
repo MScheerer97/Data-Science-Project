@@ -1,0 +1,34 @@
+* File Documentation *
+**********************
+
+* A detailed explanation of each file can be found in the Excel document "File Management"
+* This file only concerns the order of the files.
+
+* Files starting with 01, 05, and 09 need not to be executed any more
+	** Files starting with 01 are our data foundation and the results are already stored in the output folder.
+	** Files starting with 05 train our machine learning models; since data for 5 years (2016 until 17th January 2022) is included; it is
+	   unlikely that the models need to be trained again in the near future
+	** Files 09 include the hyperparameter analysis which is based on the results from file 05.
+
+* To update the data the remaining files need to be executed in the following order
+	** 02 Files
+	** 03 File
+	** 04 File
+	** 06 File
+	** 07 File
+	** 08 File
+	** 09 File
+
+
+* Alternatively, you can automate the data update by running file 10_Update_Data
+
+
+
+
+** Shiny App **
+
+* To use the R Shiny App, only the following folder and files are necessary:
+* ui.R, server.R, load.R, app.R
+* output, models and www folder
+* 04_Data_Preparation_Shiny
+* all func_* files
