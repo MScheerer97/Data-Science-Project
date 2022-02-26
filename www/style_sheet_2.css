@@ -1,0 +1,218 @@
+/* Background color */
+/* **************** */
+
+/*Background Color of dashbordbody is black and font color white */
+.content-wrapper, .right-side {
+    min-height: 100%;
+    background-color: black;
+    z-index: 800;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -10px;
+    background-color: black;
+    color:white;
+}
+
+
+.nav-tabs-custom>.tab-content {
+    background: black;
+    padding: 10px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.nav-tabs-custom>.nav-tabs {
+    margin: 0;
+    border-bottom-color: black;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background-color: black;
+}
+
+body {
+    text-align: justify;
+    background-color: black;
+    color: white;
+}
+
+
+/* HTML documents more to the left */
+p {
+  margin-left: -260px;
+}
+
+
+/* Title background color */
+/* ********************** */
+.skin-blue .main-header .navbar {
+  color: cadetblue;
+  background-color: cadetblue;
+}
+
+.skin-blue .main-header .logo {
+    background-color: cadetblue;
+    color: white;
+    border-bottom: 0 solid transparent;
+}
+
+
+/* Sidebar color */
+/* ************* */
+
+.skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper {
+    background-color: #5f9ea075;
+    color: white; /* previously black */
+}
+
+.skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .sidebar-menu>li>a {
+    color: white; /* previously black */
+}
+
+.skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a {
+    color: white;
+    background: darkgrey;
+    border-left-color: #5f9ea075;
+}
+
+
+/* Color of tabs */
+/* ************ */
+
+/* Unactive tabs */
+.nav-tabs-custom .nav-tabs li a {background-color: black;   color:cadetblue; border-color: cadetblue}
+/* Active tabs */
+.nav-tabs-custom .nav-tabs li.active a {background-color: darkgrey; color:white; ; border-color: white; !important;}
+.nav-tabs-custom>.nav-tabs>li.active {
+    border-top-color: white;
+}
+
+/* Info Box Style */
+.box-header h3 {
+   font-weight: bold;
+   color:green;
+}
+
+/* color of specific tabs */
+  /* Price Prediction Tab */
+  /* ******************* */
+  
+.tabbable > .nav > li > a[data-value='K-Means Clustering Theory'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='K-Means Clustering Calculation'] {background-color:#6db7b9;color:black;font-size: 10px}
+
+.tabbable > .nav > li > a[data-value='Time Series Model'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Regularized Regression'] {background-color:#6db7b9; color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Support Vector Machines'] {background-color:#6db7b9; color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Random Forests'] {background-color:#6db7b9; color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='XGBoost'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Neural Network'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Price Prediction Info'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Find Best Model'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Market Comparison'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Model Comparison'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Single Comparison'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Error Metrics Theory'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Error Metrics Calculation'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Error Metrics in the Literature'] {background-color:#6db7b9;color:black;font-size: 10px}
+
+.tabbable > .nav > li > a[data-value='Feature Importance Theory'] {background-color:#6db7b9;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Feature Importance Plot'] {background-color:#6db7b9;color:black;font-size: 10px}
+
+.tabbable > .nav > li > a[data-value='Table'] {background-color:#3399FF; color:black; font-size: 9px}
+.tabbable > .nav > li > a[data-value='Plot'] {background-color:#3399FF; color:black; font-size: 9px}
+.tabbable > .nav > li > a[data-value='Comparison Full Model'] {background-color:#3399FF; color:black; font-size: 9px}
+.tabbable > .nav > li > a[data-value='Next week(s) predictions'] {background-color:#3399FF; color:black; font-size: 9px}
+.tabbable > .nav > li > a[data-value='Predictions from 2016 onwards'] {background-color:#3399FF; color:black; font-size: 9px}
+  /* Nutrition and Footprint */
+  /* *********************** */
+.tabbable > .nav > li > a[data-value='Nutrition'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Footprint'] {background-color:#6db7b9; color:black; font-size: 10px}
+  /* Price Development Tab */
+  /* ************************/
+.tabbable > .nav > li > a[data-value='Information'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Descriptive Statistics'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Descriptive Statistics - Overview'] {background-color:#3399FF; color:black; font-size: 9px}
+.tabbable > .nav > li > a[data-value='Explorative Data Analysis'] {background-color:#3399FF; color:black; font-size: 9px}
+.tabbable > .nav > li > a[data-value='Time Series Visualization'] {background-color:#3399FF; color:black; font-size: 9px}
+  /* Predictor Development */
+  /* ********************* */
+.tabbable > .nav > li > a[data-value='Non-Weather Predictor Analysis'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Non-Weather Predictors Comparison'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Weather Analysis'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Time Series Development of Prices and all Predictors'] {background-color:#6db7b9; color:black; font-size: 10px}
+  /* Food Basket */
+  /* *********** */
+.tabbable > .nav > li > a[data-value='Food Basket Guide'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Preferences'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Selection'] {background-color:#3399FF; color:black; font-size: 9px}
+.tabbable > .nav > li > a[data-value='Nutrition and Footprint'] {background-color:#3399FF; color:black; font-size: 9px}
+.tabbable > .nav > li > a[data-value='Past Prices Comparison'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Price Recommendation'] {background-color:#6db7b9; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Price Recommendation Guide'] {background-color:#6db7b9; color:black; font-size: 10px}
+
+
+/* User inputs */
+/* *********** */
+
+/* White Font Size */
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* HTML in white font color */
+element.style {
+    color: white;
+}
+
+
+/* Data Table Output */
+/* ***************** */
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info {
+    background-color: black;
+    color: white; 
+    !important;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate .DataTables_Table_1_info.dataTables_info{
+    color: white;
+}
+
+
+.DataTables_Table_1_info.dataTables_info {
+    color: white;
+}
+
+
+/* Boxes */
+.box-header .box-title, .box-header>.fa, .box-header>.glyphicon, .box-header>.ion {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+    color: black;
+}
+
+
+
+/* Color of switchInput */
+  /* OFF is darkred */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+    background: #9a1707;
+    color: white;
+}
+  /* ON is dark green */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger {
+    background: #00710a;
+    color: #fff;
+}
+  /* Box has border color darkgrey*/
+.bootstrap-switch.bootstrap-switch-focused {
+    border-color: darkgray;
+    outline: 0;
+}

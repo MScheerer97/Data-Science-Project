@@ -1,0 +1,46 @@
+
+/* Body of App */
+body {
+  background-color: black; /* background color of app */
+  color: white; /* text color */
+}
+
+/* Color of title of app */
+h1 {
+    font-size: 34px;
+    color: darkcyan;
+}
+
+/* color of tabs: tabPandel() */ 
+.tabbable > .nav > li > a {font-weight: bold; 
+background-color: gray;  color:black} /* without clicking / being active */
+
+.tabbable > .nav > li[class=active] > a {background-color: 
+lightgray; color:black} /* when tab is clicked */
+
+/* color of tabs: navlistPanel() */
+ .nav.nav-pills.nav-stacked > .active > a, .nav.nav-pills.nav-stacked > .active > a:hover {
+background-color: darkgrey; color:white} /* color when clicked */
+li > a {color:black} /*color when not active/clicked*/
+
+/* color of specific panels */
+  /* Price Prediction Tab */
+  /* ******************* */
+.tabbable > .nav > li > a[data-value='Time Series Model'] {background-color:#DBDB77; color:black; font-size: 10px}
+.tabbable > .nav > li > a[data-value='Regularized Regression'] {background-color:#DBDB77; color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Support Vector Machines'] {background-color:#DBDB77; color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Random Forests'] {background-color:#DBDB77; color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='XGBoost'] {background-color:#DBDB77;color:black;font-size: 10px}
+.tabbable > .nav > li > a[data-value='Neural Network'] {background-color:#DBDB77;color:black;font-size: 10px}
+
+/* Color of panels */
+.well {background-color:white; color:black}
+
+
+/* Color of Buttons */
+.btn-default {
+    color: white;
+    background-color: darkcyan;
+    border-color: darkcyan;
+    font-style: oblique;
+}
