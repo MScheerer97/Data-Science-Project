@@ -1,0 +1,1287 @@
+﻿food,season,cultivation,country
+Apple,January,storage,Germany 
+Apple,February,storage,Germany 
+Apple,March,storage,Germany 
+Apple,April,storage,Germany 
+Apple,May,storage,Germany 
+Apple,June,storage; open field,Germany 
+Apple,July,storage; open field,Germany 
+Apple,August,open field,Germany 
+Apple,September,open field,Germany 
+Apple,October,open field,Germany 
+Apple,November,storage,Germany 
+Apple,December,storage,Germany 
+Pear,January,storage,Germany 
+Pear,February,storage,Germany 
+Pear,March,storage,Germany 
+Pear,April,open field,Germany 
+Pear,May,open field,Germany 
+Pear,June,storage,Germany 
+Pear,July,storage,Germany 
+Pear,August,storage,Germany 
+Grapes ,September,open field,Germany 
+Grapes ,October,open field,Germany 
+Grapes ,November,open field,Germany 
+Strawberry,December,"under mat, film",Germany 
+Strawberry,January,"under mat, film",Germany 
+Strawberry,February,open field,Germany 
+Strawberry,March,open field,Germany 
+Strawberry,April,open field,Germany 
+Strawberry,May,open field,Germany 
+Strawberry,June,"under mat, film",Germany 
+Strawberry,July,heated greenhouse; unheated greenhouse,Germany 
+Strawberry,August,heated greenhouse; unheated greenhouse,Germany 
+Peach,September,"under mat, film",Germany 
+Peach,October,"under mat, film",Germany 
+Peach,November,open field,Germany 
+Nectarine,December,"under mat, film",Germany 
+Nectarine,January,"under mat, film",Germany 
+Nectarine,February,open field,Germany 
+Plum,March,open field,Germany 
+Plum,April,open field,Germany 
+Plum,May,open field,Germany 
+Plum,June,open field,Germany 
+Plum,July,open field,Germany 
+Artichoke,August,unheated greenhouse,Germany 
+Artichoke,September,unheated greenhouse,Germany 
+Artichoke,October,unheated greenhouse,Germany 
+Artichoke,November,unheated greenhouse,Germany 
+Eggplant,December,unheated greenhouse,Germany 
+Eggplant,January,unheated greenhouse,Germany 
+Eggplant,February,unheated greenhouse,Germany 
+Eggplant,March,unheated greenhouse,Germany 
+Eggplant,April,unheated greenhouse,Germany 
+Eggplant,May,unheated greenhouse,Germany 
+Cauliflower,June,"under mat, film",Germany 
+Cauliflower,July,open field,Germany 
+Cauliflower,August,open field,Germany 
+Cauliflower,September,open field,Germany 
+Cauliflower,October,open field,Germany 
+Cauliflower,November,open field,Germany 
+Cauliflower,December,open field,Germany 
+Cauliflower,January,open field,Germany 
+Carrot,February,storage,Germany 
+Carrot,March,storage,Germany 
+Carrot,April,storage,Germany 
+Carrot,May,storage,Germany 
+Carrot,June,storage; open field,Germany 
+Carrot,July,storage; open field,Germany 
+Carrot,August,storage; open field,Germany 
+Carrot,September,storage; open field,Germany 
+Carrot,October,storage; open field,Germany 
+Carrot,November,storage; open field,Germany 
+Carrot,December,storage; open field,Germany 
+Carrot,January,storage,Germany 
+Beans,February,unheated greenhouse; open field,Germany 
+Beans,March,open field,Germany 
+Beans,April,open field,Germany 
+Beans,May,open field,Germany 
+Beans,June,open field,Germany 
+Iceberg Lettuce,July,"open field; under mat, film",Germany 
+Iceberg Lettuce,August,open field,Germany 
+Iceberg Lettuce,September,open field,Germany 
+Iceberg Lettuce,October,open field,Germany 
+Iceberg Lettuce,November,open field,Germany 
+Iceberg Lettuce,December,open field,Germany 
+Endive,January,"under mat, film",Germany 
+Endive,February,open field,Germany 
+Endive,March,open field,Germany 
+Endive,April,open field,Germany 
+Endive,May,open field,Germany 
+Endive,June,open field,Germany 
+Endive,July,open field,Germany 
+Brussel Sprouts,August,storage; open field,Germany 
+Brussel Sprouts,September,storage; open field,Germany 
+Brussel Sprouts,October,storage; open field,Germany 
+Brussel Sprouts,November,open field,Germany 
+Brussel Sprouts,December,open field,Germany 
+Brussel Sprouts,January,open field,Germany 
+Cucumber,February,heated greenhouse,Germany 
+Cucumber,March,heated greenhouse,Germany 
+Cucumber,April,heated greenhouse; unheated greenhouse,Germany 
+Cucumber,May,heated greenhouse; unheated greenhouse,Germany 
+Cucumber,June,open field,Germany 
+Cucumber,July,open field,Germany 
+Cucumber,August,open field,Germany 
+Cucumber,September,open field,Germany 
+Cucumber,October,heated greenhouse; unheated greenhouse,Germany 
+Potatoes,November,storage,Germany 
+Potatoes,December,storage,Germany 
+Potatoes,January,storage,Germany 
+Potatoes,February,storage,Germany 
+Potatoes,March,storage,Germany 
+Potatoes,April,storage; open field,Germany 
+Potatoes,May,storage; open field,Germany 
+Potatoes,June,storage; open field,Germany 
+Potatoes,July,storage; open field,Germany 
+Potatoes,August,storage; open field,Germany 
+Potatoes,September,storage; open field,Germany 
+Potatoes,October,storage,Germany 
+Lettuce,November,heated greenhouse; unheated greenhouse,Germany 
+Lettuce,December,unheated greenhouse,Germany 
+Lettuce,January,"unheated greenhouse; under mat, film",Germany 
+Lettuce,February,"open field; under mat, film",Germany 
+Lettuce,March,open field,Germany 
+Lettuce,April,open field,Germany 
+Lettuce,May,open field,Germany 
+Lettuce,June,open field,Germany 
+Lettuce,July,open field,Germany 
+Lettuce,August,unheated greenhouse,Germany 
+Lettuce,September,heated greenhouse; unheated greenhouse,Germany 
+Tomato,October,heated greenhouse,Germany 
+Tomato,November,heated greenhouse,Germany 
+Tomato,December,heated greenhouse; unheated greenhouse,Germany 
+Tomato,January,"unheated greenhouse; under mat, film",Germany 
+Tomato,February,"unheated greenhouse; under mat, film",Germany 
+Tomato,March,"unheated greenhouse; under mat, film",Germany 
+Tomato,April,"unheated greenhouse; under mat, film",Germany 
+Tomato,May,heated greenhouse; unheated greenhouse,Germany 
+Tomato,June,heated greenhouse,Germany 
+Tomato,July,heated greenhouse,Germany 
+Onion,August,storage,Germany 
+Onion,September,storage,Germany 
+Onion,October,storage,Germany 
+Onion,November,storage,Germany 
+Onion,December,storage,Germany 
+Onion,January,"storage; under mat, film",Germany 
+Onion,February,open field,Germany 
+Onion,March,open field,Germany 
+Onion,April,open field,Germany 
+Onion,May,open field,Germany 
+Onion,June,storage,Germany 
+Onion,July,storage,Germany 
+Zucchini,August,"under mat, film",Germany 
+Zucchini,September,open field,Germany 
+Zucchini,October,open field,Germany 
+Zucchini,November,open field,Germany 
+Zucchini,December,open field,Germany 
+Zucchini,January,open field,Germany 
+Bell Pepper,February,unheated greenhouse,Germany 
+Bell Pepper,March,unheated greenhouse,Germany 
+Bell Pepper,April,unheated greenhouse,Germany 
+Bell Pepper,May,unheated greenhouse,Germany 
+Bell Pepper,June,unheated greenhouse,Germany 
+Bell Pepper,July,unheated greenhouse,Germany 
+Bell Pepper,August,unheated greenhouse,Germany 
+Leek,September,storage; open field,Germany 
+Leek,October,storage; open field,Germany 
+Leek,November,storage; open field,Germany 
+Leek,December,open field,Germany 
+Leek,January,open field,Germany 
+Leek,February,open field,Germany 
+Leek,March,open field,Germany 
+Leek,April,open field,Germany 
+Leek,May,open field,Germany 
+Leek,June,open field,Germany 
+Leek,July,open field,Germany 
+Leek,August,open field,Germany 
+Apple,September,open field,Italy
+Apple,October,open field,Italy
+Pear,November,open field,Italy
+Pear,December,open field,Italy
+Pear,January,open field,Italy
+Pear,February,open field,Italy
+Pear,March,open field,Italy
+Grapes ,April,open field,Italy
+Grapes ,May,open field,Italy
+Strawberry,June,open field,Italy
+Strawberry,July,open field,Italy
+Kiwi,August,open field,Italy
+Kiwi,September,open field,Italy
+Kiwi,October,open field,Italy
+Kiwi,November,open field,Italy
+Kiwi,December,open field,Italy
+Kiwi,January,open field,Italy
+Orange,February,heated greenhouse,Italy
+Orange,March,heated greenhouse,Italy
+Orange,April,heated greenhouse,Italy
+Mandarin,May,open field,Italy
+Lemon,June,open field,Italy
+Lemon,July,open field,Italy
+Lemon,August,open field,Italy
+Lemon,September,open field,Italy
+Lemon,October,open field,Italy
+Lemon,November,open field,Italy
+Peach,December,heated greenhouse,Italy
+Peach,January,heated greenhouse,Italy
+Peach,February,heated greenhouse,Italy
+Peach,March,heated greenhouse,Italy
+Peach,April,heated greenhouse,Italy
+Plum,May,open field,Italy
+Plum,June,open field,Italy
+Plum,July,open field,Italy
+Plum,August,open field,Italy
+Artichoke,September,unheated greenhouse,Italy
+Artichoke,October,unheated greenhouse,Italy
+Artichoke,November,unheated greenhouse,Italy
+Artichoke,December,unheated greenhouse,Italy
+Cucumber,January,heated greenhouse,Italy
+Cucumber,February,heated greenhouse,Italy
+Cucumber,March,heated greenhouse,Italy
+Onion,April,open field,Italy
+Onion,May,open field,Italy
+Onion,June,open field,Italy
+Eggplant,July,open field,Italy
+Eggplant,August,open field,Italy
+Eggplant,September,open field,Italy
+Tomato,October,unheated greenhouse,Italy
+Tomato,November,unheated greenhouse,Italy
+Tomato,December,unheated greenhouse,Italy
+Tomato,January,unheated greenhouse,Italy
+Tomato,February,unheated greenhouse,Italy
+Cauliflower,March,open field,Italy
+Cauliflower,April,open field,Italy
+Cauliflower,May,open field,Italy
+Cauliflower,June,open field,Italy
+Cauliflower,July,open field,Italy
+Cauliflower,August,open field,Italy
+Cauliflower,September,open field,Italy
+Carrot,October,open field,Italy
+Carrot,November,open field,Italy
+Beans,December,unheated greenhouse,Italy
+Beans,January,unheated greenhouse,Italy
+Beans,February,unheated greenhouse,Italy
+Beans,March,unheated greenhouse,Italy
+Beans,April,unheated greenhouse,Italy
+Endive,May,unheated greenhouse,Italy
+Endive,June,unheated greenhouse,Italy
+Endive,July,unheated greenhouse,Italy
+Endive,August,unheated greenhouse,Italy
+Endive,September,unheated greenhouse,Italy
+Endive,October,unheated greenhouse,Italy
+Endive,November,unheated greenhouse,Italy
+Lettuce,December,unheated greenhouse,Italy
+Lettuce,January,unheated greenhouse,Italy
+Lettuce,February,unheated greenhouse,Italy
+Lettuce,March,unheated greenhouse,Italy
+Lettuce,April,unheated greenhouse,Italy
+Lettuce,May,unheated greenhouse,Italy
+Lettuce,June,unheated greenhouse,Italy
+Lettuce,July,unheated greenhouse,Italy
+Lettuce,August,unheated greenhouse,Italy
+Lettuce,September,unheated greenhouse,Italy
+Lettuce,October,unheated greenhouse,Italy
+Lettuce,November,unheated greenhouse,Italy
+Brussel Sprouts,December,unheated greenhouse,Italy
+Brussel Sprouts,January,unheated greenhouse,Italy
+Brussel Sprouts,February,unheated greenhouse,Italy
+Brussel Sprouts,March,unheated greenhouse,Italy
+Brussel Sprouts,April,unheated greenhouse,Italy
+Brussel Sprouts,May,unheated greenhouse,Italy
+Cucumber,June,unheated greenhouse,Italy
+Cucumber,July,unheated greenhouse,Italy
+Cucumber,August,unheated greenhouse,Italy
+Cucumber,September,unheated greenhouse,Italy
+Cucumber,October,unheated greenhouse,Italy
+Bell Pepper,November,unheated greenhouse,Italy
+Bell Pepper,December,unheated greenhouse,Italy
+Bell Pepper,January,unheated greenhouse,Italy
+Bell Pepper,February,unheated greenhouse,Italy
+Leek,March,open field,Italy
+Leek,April,open field,Italy
+Leek,May,open field,Italy
+Leek,June,open field,Italy
+Leek,July,open field,Italy
+Leek,August,open field,Italy
+Leek,September,open field,Italy
+Leek,October,open field,Italy
+Zucchini,November,unheated greenhouse,Italy
+Zucchini,December,unheated greenhouse,Italy
+Zucchini,January,unheated greenhouse,Italy
+Zucchini,February,unheated greenhouse,Italy
+Zucchini,March,unheated greenhouse,Italy
+Zucchini,April,unheated greenhouse,Italy
+Potatoess,May,open field,Italy
+Potatoess,June,open field,Italy
+Apple,July,open field,Spain
+Apple,August,open field,Spain
+Apple,September,open field,Spain
+Apple,October,open field,Spain
+Apple,November,open field,Spain
+Apple,December,open field,Spain
+Pear,January,open field,Spain
+Pear,February,open field,Spain
+Pear,March,open field,Spain
+Pear,April,open field,Spain
+Pear,May,open field,Spain
+Grapes ,June,open field,Spain
+Grapes ,July,open field,Spain
+Grapes ,August,open field,Spain
+Grapes ,September,open field,Spain
+Strawberry,October,unheated greenhouse,Spain
+Strawberry,November,unheated greenhouse,Spain
+Strawberry,December,unheated greenhouse,Spain
+Strawberry,January,unheated greenhouse,Spain
+Kiwi,February,open field,Spain
+Kiwi,March,open field,Spain
+Kiwi,April,open field,Spain
+Kiwi,May,open field,Spain
+Kiwi,June,open field,Spain
+Kiwi,July,open field,Spain
+Orange,August,open field,Spain
+Orange,September,open field,Spain
+Orange,October,open field,Spain
+Orange,November,unheated greenhouse,Spain
+Orange,December,unheated greenhouse,Spain
+Orange,January,unheated greenhouse,Spain
+Mandarin,February,unheated greenhouse,Spain
+Mandarin,March,unheated greenhouse,Spain
+Mandarin,April,unheated greenhouse,Spain
+Mandarin,May,unheated greenhouse,Spain
+Mandarin,June,unheated greenhouse,Spain
+Lemon,July,open field,Spain
+Lemon,August,open field,Spain
+Lemon,September,open field,Spain
+Lemon,October,open field,Spain
+Lemon,November,unheated greenhouse,Spain
+Lemon,December,unheated greenhouse,Spain
+Lemon,January,unheated greenhouse,Spain
+Banana,February,open field,Spain
+Banana,March,open field,Spain
+Banana,April,open field,Spain
+Banana,May,open field,Spain
+Banana,June,open field,Spain
+Banana,July,open field,Spain
+Banana,August,open field,Spain
+Banana,September,open field,Spain
+Banana,October,open field,Spain
+Banana,November,open field,Spain
+Banana,December,open field,Spain
+Banana,January,open field,Spain
+Nectarine,February,unheated greenhouse,Spain
+Nectarine,March,unheated greenhouse,Spain
+Nectarine,April,unheated greenhouse,Spain
+Nectarine,May,unheated greenhouse,Spain
+Nectarine,June,unheated greenhouse,Spain
+Peach,July,open field,Spain
+Peach,August,open field,Spain
+Peach,September,open field,Spain
+Peach,October,open field,Spain
+Peach,November,open field,Spain
+Plum,December,unheated greenhouse,Spain
+Plum,January,unheated greenhouse,Spain
+Plum,February,unheated greenhouse,Spain
+Artichoke,March,unheated greenhouse,Spain
+Artichoke,April,unheated greenhouse,Spain
+Artichoke,May,unheated greenhouse,Spain
+Artichoke,June,unheated greenhouse,Spain
+Artichoke,July,unheated greenhouse,Spain
+Artichoke,August,unheated greenhouse,Spain
+Eggplant,September,unheated greenhouse,Spain
+Eggplant,October,unheated greenhouse,Spain
+Eggplant,November,unheated greenhouse,Spain
+Eggplant,December,unheated greenhouse,Spain
+Eggplant,January,unheated greenhouse,Spain
+Eggplant,February,unheated greenhouse,Spain
+Eggplant,March,unheated greenhouse,Spain
+Cauliflower,April,open field,Spain
+Cauliflower,May,open field,Spain
+Cauliflower,June,open field,Spain
+Cauliflower,July,open field,Spain
+Cauliflower,August,open field,Spain
+Cauliflower,September,open field,Spain
+Carrot,October,open field,Spain
+Carrot,November,open field,Spain
+Carrot,December,open field,Spain
+Carrot,January,open field,Spain
+Carrot,February,open field,Spain
+Carrot,March,open field,Spain
+Carrot,April,open field,Spain
+Carrot,May,open field,Spain
+Carrot,June,open field,Spain
+Carrot,July,open field,Spain
+Carrot,August,open field,Spain
+Carrot,September,open field,Spain
+Beans,October,unheated greenhouse,Spain
+Beans,November,unheated greenhouse,Spain
+Beans,December,unheated greenhouse,Spain
+Beans,January,unheated greenhouse,Spain
+Beans,February,unheated greenhouse,Spain
+Beans,March,unheated greenhouse,Spain
+Beans,April,unheated greenhouse,Spain
+Beans,May,unheated greenhouse,Spain
+Beans,June,unheated greenhouse,Spain
+Endive,July,unheated greenhouse,Spain
+Endive,August,unheated greenhouse,Spain
+Endive,September,unheated greenhouse,Spain
+Endive,October,unheated greenhouse,Spain
+Endive,November,unheated greenhouse,Spain
+Lettuce,December,unheated greenhouse,Spain
+Lettuce,January,unheated greenhouse,Spain
+Lettuce,February,unheated greenhouse,Spain
+Lettuce,March,unheated greenhouse,Spain
+Lettuce,April,unheated greenhouse,Spain
+Lettuce,May,unheated greenhouse,Spain
+Lettuce,June,unheated greenhouse,Spain
+Lettuce,July,unheated greenhouse,Spain
+Lettuce,August,unheated greenhouse,Spain
+Lettuce,September,unheated greenhouse,Spain
+Lettuce,October,unheated greenhouse,Spain
+Lettuce,November,unheated greenhouse,Spain
+Cucumber,December,unheated greenhouse,Spain
+Cucumber,January,unheated greenhouse,Spain
+Cucumber,February,unheated greenhouse,Spain
+Cucumber,March,unheated greenhouse,Spain
+Tomato,April,unheated greenhouse,Spain
+Green Bell Pepper,May,unheated greenhouse,Spain
+Green Bell Pepper,June,unheated greenhouse,Spain
+Green Bell Pepper,July,unheated greenhouse,Spain
+Green Bell Pepper,August,unheated greenhouse,Spain
+Green Bell Pepper,September,unheated greenhouse,Spain
+Green Bell Pepper,October,unheated greenhouse,Spain
+Green Bell Pepper,November,unheated greenhouse,Spain
+Green Bell Pepper,December,unheated greenhouse,Spain
+Green Bell Pepper,January,unheated greenhouse,Spain
+Red Bell Pepper,February,unheated greenhouse,Spain
+Red Bell Pepper,March,unheated greenhouse,Spain
+Red Bell Pepper,April,unheated greenhouse,Spain
+Red Bell Pepper,May,unheated greenhouse,Spain
+Leek,June,open field,Spain
+Leek,July,open field,Spain
+Leek,August,open field,Spain
+Leek,September,open field,Spain
+Leek,October,open field,Spain
+Leek,November,open field,Spain
+Leek,December,open field,Spain
+Leek,January,open field,Spain
+Leek,February,open field,Spain
+Leek,March,open field,Spain
+Leek,April,open field,Spain
+Leek,May,open field,Spain
+Onion,June,open field,Spain
+Onion,July,open field,Spain
+Onion,August,open field,Spain
+Onion,September,open field,Spain
+Onion,October,open field,Spain
+Onion,November,open field,Spain
+Onion,December,open field,Spain
+Onion,January,open field,Spain
+Onion,February,open field,Spain
+Onion,March,open field,Spain
+Onion,April,open field,Spain
+Onion,May,open field,Spain
+Zucchini,June,unheated greenhouse,Spain
+Zucchini,July,unheated greenhouse,Spain
+Zucchini,August,unheated greenhouse,Spain
+Zucchini,September,unheated greenhouse,Spain
+Zucchini,October,unheated greenhouse,Spain
+Zucchini,November,unheated greenhouse,Spain
+Potatoess,December,open field,Spain
+Potatoess,January,open field,Spain
+Potatoess,February,open field,Spain
+Potatoess,March,open field,Netherlands
+Apple,April,storage,Netherlands
+Apple,May,storage,Netherlands
+Apple,June,storage,Netherlands
+Apple,July,open field,Netherlands
+Apple,August,open field,Netherlands
+Apple,September,open field,Netherlands
+Apple,October,open field,Netherlands
+Apple,November,open field,Netherlands
+Apple,December,open field,Netherlands
+Pear,January,open field,Netherlands
+Pear,February,open field,Netherlands
+Pear,March,open field,Netherlands
+Pear,April,open field,Netherlands
+Pear,May,open field,Netherlands
+Pear,June,open field,Netherlands
+Pear,July,open field,Netherlands
+Pear,August,open field,Netherlands
+Pear,September,open field,Netherlands
+Strawberry,October,unheated greenhouse,Netherlands
+Strawberry,November,unheated greenhouse,Netherlands
+Strawberry,December,unheated greenhouse,Netherlands
+Strawberry,January,unheated greenhouse,Netherlands
+Cherry,February,unheated greenhouse,Netherlands
+Cherry,March,unheated greenhouse,Netherlands
+Cherry,April,unheated greenhouse,Netherlands
+Cherry,May,unheated greenhouse,Netherlands
+Cauliflower,June,open field,Netherlands
+Cauliflower,July,open field,Netherlands
+Cauliflower,August,open field,Netherlands
+Cauliflower,September,open field,Netherlands
+Cauliflower,October,open field,Netherlands
+Cauliflower,November,open field,Netherlands
+Carrot,December,open field,Netherlands
+Carrot,January,open field,Netherlands
+Carrot,February,open field,Netherlands
+Carrot,March,open field,Netherlands
+Carrot,April,open field,Netherlands
+Carrot,May,open field,Netherlands
+Carrot,June,open field,Netherlands
+Carrot,July,open field,Netherlands
+Carrot,August,open field,Netherlands
+Carrot,September,open field,Netherlands
+Carrot,October,open field,Netherlands
+Carrot,November,open field,Netherlands
+Beans,December,unheated greenhouse,Netherlands
+Beans,January,unheated greenhouse,Netherlands
+Beans,February,unheated greenhouse,Netherlands
+Iceberg Lettuce,March,unheated greenhouse,Netherlands
+Iceberg Lettuce,April,unheated greenhouse,Netherlands
+Iceberg Lettuce,May,unheated greenhouse,Netherlands
+Iceberg Lettuce,June,unheated greenhouse,Netherlands
+Iceberg Lettuce,July,unheated greenhouse,Netherlands
+Iceberg Lettuce,August,unheated greenhouse,Netherlands
+Endive,September,unheated greenhouse,Netherlands
+Endive,October,unheated greenhouse,Netherlands
+Endive,November,unheated greenhouse,Netherlands
+Endive,December,unheated greenhouse,Netherlands
+Endive,January,unheated greenhouse,Netherlands
+Endive,February,unheated greenhouse,Netherlands
+Brussel Sprouts,March,unheated greenhouse,Netherlands
+Brussel Sprouts,April,unheated greenhouse,Netherlands
+Brussel Sprouts,May,unheated greenhouse,Netherlands
+Brussel Sprouts,June,unheated greenhouse,Netherlands
+Brussel Sprouts,July,unheated greenhouse,Netherlands
+Cucumber,August,unheated greenhouse,Netherlands
+Cucumber,September,unheated greenhouse,Netherlands
+Cucumber,October,unheated greenhouse,Netherlands
+Cucumber,November,unheated greenhouse,Netherlands
+Cucumber,December,unheated greenhouse,Netherlands
+Cucumber,January,unheated greenhouse,Netherlands
+Tomato,February,unheated greenhouse,Netherlands
+Tomato,March,unheated greenhouse,Netherlands
+Tomato,April,unheated greenhouse,Netherlands
+Tomato,May,unheated greenhouse,Netherlands
+Tomato,June,unheated greenhouse,Netherlands
+Tomato,July,unheated greenhouse,Netherlands
+Tomato,August,unheated greenhouse,Netherlands
+Tomato,September,unheated greenhouse,Netherlands
+Tomato,October,unheated greenhouse,Netherlands
+Leek,November,unheated greenhouse,Netherlands
+Leek,December,unheated greenhouse,Netherlands
+Leek,January,unheated greenhouse,Netherlands
+Leek,February,unheated greenhouse,Netherlands
+Leek,March,unheated greenhouse,Netherlands
+Leek,April,unheated greenhouse,Netherlands
+Leek,May,unheated greenhouse,Netherlands
+Leek,June,unheated greenhouse,Netherlands
+Leek,July,unheated greenhouse,Netherlands
+Leek,August,unheated greenhouse,Netherlands
+Leek,September,unheated greenhouse,Netherlands
+Leek,October,unheated greenhouse,Netherlands
+Onion,November,open field,Netherlands
+Onion,December,open field,Netherlands
+Onion,January,open field,Netherlands
+Onion,February,open field,Netherlands
+Onion,March,open field,Netherlands
+Onion,April,open field,Netherlands
+Onion,May,open field,Netherlands
+Onion,June,open field,Netherlands
+Onion,July,open field,Netherlands
+Onion,August,open field,Netherlands
+Onion,September,open field,Netherlands
+Zucchini,October,open field,Netherlands
+Zucchini,November,open field,Netherlands
+Zucchini,December,open field,Netherlands
+Asparagus,January,open field,Netherlands
+Asparagus,February,open field,Netherlands
+Asparagus,March,open field,Netherlands
+Apple,April,open field,Greece
+Apple,May,open field,Greece
+Apple,June,open field,Greece
+Apple,July,open field,Greece
+Apple,August,open field,Greece
+Pear,September,open field,Greece
+Pear,October,open field,Greece
+Pear,November,open field,Greece
+Pear,December,open field,Greece
+Pear,January,open field,Greece
+Pear,February,open field,Greece
+Grapes ,March,open field,Greece
+Grapes ,April,open field,Greece
+Grapes ,May,open field,Greece
+Strawberry,June,open field,Greece
+Strawberry,July,open field,Greece
+Strawberry,August,open field,Greece
+Kiwi,September,open field,Greece
+Kiwi,October,open field,Greece
+Kiwi,November,open field,Greece
+Kiwi,December,open field,Greece
+Orange,January,open field,Greece
+Orange,February,open field,Greece
+Orange,March,open field,Greece
+Orange,April,open field,Greece
+Orange,May,open field,Greece
+Orange,June,open field,Greece
+Orange,July,open field,Greece
+Clementine,August,unheated greenhouse,Greece
+Clementine,September,unheated greenhouse,Greece
+Clementine,October,unheated greenhouse,Greece
+Clementine,November,unheated greenhouse,Greece
+Clementine,December,unheated greenhouse,Greece
+Clementine,January,unheated greenhouse,Greece
+Clementine,February,unheated greenhouse,Greece
+Mandarin,March,unheated greenhouse,Greece
+Mandarin,April,unheated greenhouse,Greece
+Mandarin,May,unheated greenhouse,Greece
+Mandarin,June,unheated greenhouse,Greece
+Mandarin,July,unheated greenhouse,Greece
+Mandarin,August,unheated greenhouse,Greece
+Mandarin,September,unheated greenhouse,Greece
+Lemon,October,unheated greenhouse,Greece
+Lemon,November,unheated greenhouse,Greece
+Lemon,December,unheated greenhouse,Greece
+Lemon,January,unheated greenhouse,Greece
+Lemon,February,unheated greenhouse,Greece
+Lemon,March,unheated greenhouse,Greece
+Lemon,April,unheated greenhouse,Greece
+Nectarine,May,open field,Greece
+Nectarine,June,open field,Greece
+Nectarine,July,open field,Greece
+Peach,August,open field,Greece
+Peach,September,open field,Greece
+Peach,October,open field,Greece
+Plum,November,unheated greenhouse,Greece
+Plum,December,unheated greenhouse,Greece
+Plum,January,unheated greenhouse,Greece
+Plum,February,unheated greenhouse,Greece
+Cherry,March,open field,Greece
+Cherry,April,open field,Greece
+Cherry,May,open field,Greece
+Artichoke,June,unheated greenhouse,Greece
+Artichoke,July,unheated greenhouse,Greece
+Eggplant,August,open field,Greece
+Eggplant,September,open field,Greece
+Cauliflower,October,open field,Greece
+Cauliflower,November,open field,Greece
+Cauliflower,December,open field,Greece
+Cauliflower,January,open field,Greece
+Cauliflower,February,open field,Greece
+Cauliflower,March,open field,Greece
+Carrot,April,open field,Greece
+Carrot,May,open field,Greece
+Carrot,June,open field,Greece
+Carrot,July,open field,Greece
+Carrot,August,open field,Greece
+Carrot,September,open field,Greece
+Carrot,October,open field,Greece
+Carrot,November,open field,Greece
+Carrot,December,open field,Greece
+Beans,January,unheated greenhouse,Greece
+Beans,February,unheated greenhouse,Greece
+Beans,March,unheated greenhouse,Greece
+Beans,April,unheated greenhouse,Greece
+Beans,May,unheated greenhouse,Greece
+Lettuce,June,unheated greenhouse,Greece
+Lettuce,July,unheated greenhouse,Greece
+Lettuce,August,unheated greenhouse,Greece
+Lettuce,September,unheated greenhouse,Greece
+Lettuce,October,unheated greenhouse,Greece
+Lettuce,November,unheated greenhouse,Greece
+Lettuce,December,unheated greenhouse,Greece
+Lettuce,January,unheated greenhouse,Greece
+Lettuce,February,unheated greenhouse,Greece
+Brussel Sprouts,March,open field,Greece
+Brussel Sprouts,April,open field,Greece
+Brussel Sprouts,May,open field,Greece
+Brussel Sprouts,June,open field,Greece
+Brussel Sprouts,July,open field,Greece
+Cucumber,August,unheated greenhouse,Greece
+Cucumber,September,unheated greenhouse,Greece
+Cucumber,October,unheated greenhouse,Greece
+Cucumber,November,unheated greenhouse,Greece
+Cucumber,December,unheated greenhouse,Greece
+Tomato,January,unheated greenhouse,Greece
+Tomato,February,unheated greenhouse,Greece
+Tomato,March,unheated greenhouse,Greece
+Tomato,April,unheated greenhouse,Greece
+Bell Pepper,May,unheated greenhouse,Greece
+Bell Pepper,June,unheated greenhouse,Greece
+Bell Pepper,July,unheated greenhouse,Greece
+Bell Pepper,August,unheated greenhouse,Greece
+Leek,September,open field,Greece
+Leek,October,open field,Greece
+Leek,November,open field,Greece
+Leek,December,open field,Greece
+Leek,January,open field,Greece
+Leek,February,open field,Greece
+Onion,March,open field,Greece
+Onion,April,open field,Greece
+Zucchini,May,open field,Greece
+Zucchini,June,open field,Greece
+Zucchini,July,open field,Greece
+Zucchini,August,open field,Greece
+Zucchini,September,open field,Greece
+Asparagus,October,open field,Greece
+Asparagus,November,open field,Greece
+Potatoess,December,open field,Greece
+Potatoess,January,open field,Greece
+Potatoess,February,open field,Greece
+Potatoess,March,open field,Greece
+Potatoess,April,open field,Greece
+Potatoess,May,open field,Greece
+Apple,June,open field,France
+Apple,July,open field,France
+Apple,August,open field,France
+Apple,September,open field,France
+Apple,October,open field,France
+Apple,November,open field,France
+Apple,December,open field,France
+Apple,January,open field,France
+Apple,February,open field,France
+Pear,March,open field,France
+Pear,April,open field,France
+Pear,May,open field,France
+Pear,June,open field,France
+Pear,July,open field,France
+Pear,August,open field,France
+Pear,September,open field,France
+Pear,October,open field,France
+Pear,November,open field,France
+Strawberry,December,unheated greenhouse,France
+Strawberry,January,unheated greenhouse,France
+Kiwi,February,open field,France
+Kiwi,March,open field,France
+Kiwi,April,open field,France
+Kiwi,May,open field,France
+Kiwi,June,open field,France
+Kiwi,July,open field,France
+Kiwi,August,open field,France
+Orange,September,open field,France
+Orange,October,open field,France
+Orange,November,open field,France
+Orange,December,open field,France
+Orange,January,open field,France
+Orange,February,open field,France
+Orange,March,open field,France
+Orange,April,open field,France
+Orange,May,open field,France
+Clementine,June,open field,France
+Clementine,July,open field,France
+Clementine,August,open field,France
+Banana,September,open field,France
+Banana,October,open field,France
+Banana,November,open field,France
+Banana,December,open field,France
+Banana,January,open field,France
+Banana,February,open field,France
+Banana,March,open field,France
+Banana,April,open field,France
+Banana,May,open field,France
+Banana,June,open field,France
+Banana,July,open field,France
+Banana,August,open field,France
+Nectarine,September,unheated greenhouse,France
+Nectarine,October,unheated greenhouse,France
+Nectarine,November,unheated greenhouse,France
+Nectarine,December,unheated greenhouse,France
+Plum,January,unheated greenhouse,France
+Plum,February,unheated greenhouse,France
+Plum,March,unheated greenhouse,France
+Cherry,April,open field,France
+Artichoke,May,unheated greenhouse,France
+Artichoke,June,unheated greenhouse,France
+Artichoke,July,unheated greenhouse,France
+Artichoke,August,unheated greenhouse,France
+Artichoke,September,unheated greenhouse,France
+Artichoke,October,unheated greenhouse,France
+Artichoke,November,unheated greenhouse,France
+Eggplant,December,unheated greenhouse,France
+Eggplant,January,unheated greenhouse,France
+Eggplant,February,unheated greenhouse,France
+Eggplant,March,unheated greenhouse,France
+Cauliflower,April,open field,France
+Cauliflower,May,open field,France
+Cauliflower,June,open field,France
+Cauliflower,July,open field,France
+Cauliflower,August,open field,France
+Cauliflower,September,open field,France
+Cauliflower,October,open field,France
+Cauliflower,November,open field,France
+Carrot,December,open field,France
+Carrot,January,open field,France
+Carrot,February,open field,France
+Carrot,March,open field,France
+Carrot,April,open field,France
+Carrot,May,open field,France
+Carrot,June,open field,France
+Endive,July,unheated greenhouse,France
+Endive,August,unheated greenhouse,France
+Endive,September,unheated greenhouse,France
+Endive,October,unheated greenhouse,France
+Endive,November,unheated greenhouse,France
+Endive,December,unheated greenhouse,France
+Endive,January,unheated greenhouse,France
+Lettuce,February,unheated greenhouse,France
+Lettuce,March,unheated greenhouse,France
+Lettuce,April,unheated greenhouse,France
+Lettuce,May,unheated greenhouse,France
+Lettuce,June,unheated greenhouse,France
+Lettuce,July,unheated greenhouse,France
+Lettuce,August,unheated greenhouse,France
+Lettuce,September,unheated greenhouse,France
+Lettuce,October,unheated greenhouse,France
+Lettuce,November,unheated greenhouse,France
+Cucumber,December,unheated greenhouse,France
+Cucumber,January,unheated greenhouse,France
+Cucumber,February,unheated greenhouse,France
+Cucumber,March,unheated greenhouse,France
+Cucumber,April,unheated greenhouse,France
+Cucumber,May,unheated greenhouse,France
+Cucumber,June,unheated greenhouse,France
+Tomato,July,unheated greenhouse,France
+Tomato,August,unheated greenhouse,France
+Tomato,September,unheated greenhouse,France
+Tomato,October,unheated greenhouse,France
+Tomato,November,unheated greenhouse,France
+Tomato,December,unheated greenhouse,France
+Bell Pepper,January,unheated greenhouse,France
+Bell Pepper,February,unheated greenhouse,France
+Bell Pepper,March,unheated greenhouse,France
+Bell Pepper,April,unheated greenhouse,France
+Leek,May,open field,France
+Leek,June,open field,France
+Leek,July,open field,France
+Leek,August,open field,France
+Leek,September,open field,France
+Leek,October,open field,France
+Leek,November,open field,France
+Leek,December,open field,France
+Onion,January,open field,France
+Onion,February,open field,France
+Onion,March,open field,France
+Onion,April,open field,France
+Onion,May,open field,France
+Onion,June,open field,France
+Onion,July,open field,France
+Onion,August,open field,France
+Zucchini,September,open field,France
+Zucchini,October,open field,France
+Zucchini,November,open field,France
+Zucchini,December,open field,France
+Zucchini,January,open field,France
+Asparagus,February,open field,France
+Asparagus,March,open field,France
+Asparagus,April,open field,France
+Apple,May,storage,Belgium
+Apple,June,storage,Belgium
+Apple,July,storage,Belgium
+Apple,August,open field,Belgium
+Apple,September,open field,Belgium
+Apple,October,open field,Belgium
+Apple,November,open field,Belgium
+Apple,December,open field,Belgium
+Apple,January,open field,Belgium
+Apple,February,storage,Belgium
+Apple,March,storage,Belgium
+Pear,April,storage,Belgium
+Pear,May,storage,Belgium
+Pear,June,storage,Belgium
+Pear,July,open field,Belgium
+Pear,August,open field,Belgium
+Pear,September,open field,Belgium
+Pear,October,open field,Belgium
+Pear,November,open field,Belgium
+Pear,December,open field,Belgium
+Pear,January,storage,Belgium
+Pear,February,storage,Belgium
+Strawberry,March,unheated greenhouse,Belgium
+Strawberry,April,unheated greenhouse,Belgium
+Strawberry,May,open field,Belgium
+Strawberry,June,open field,Belgium
+Strawberry,July,open field,Belgium
+Strawberry,August,open field,Belgium
+Strawberry,September,open field,Belgium
+Strawberry,October,unheated greenhouse,Belgium
+Strawberry,November,unheated greenhouse,Belgium
+Plum,December,unheated greenhouse,Belgium
+Plum,January,unheated greenhouse,Belgium
+Plum,February,unheated greenhouse,Belgium
+Cherry,March,open field,Belgium
+Cherry,April,open field,Belgium
+Artichoke,May,unheated greenhouse,Belgium
+Artichoke,June,unheated greenhouse,Belgium
+Artichoke,July,unheated greenhouse,Belgium
+Artichoke,August,unheated greenhouse,Belgium
+Artichoke,September,unheated greenhouse,Belgium
+Artichoke,October,unheated greenhouse,Belgium
+Eggplant,November,unheated greenhouse,Belgium
+Eggplant,December,unheated greenhouse,Belgium
+Eggplant,January,unheated greenhouse,Belgium
+Eggplant,February,unheated greenhouse,Belgium
+Eggplant,March,unheated greenhouse,Belgium
+Eggplant,April,unheated greenhouse,Belgium
+Cauliflower,May,open field,Belgium
+Cauliflower,June,open field,Belgium
+Cauliflower,July,open field,Belgium
+Cauliflower,August,open field,Belgium
+Carrot,September,storage,Belgium
+Carrot,October,storage,Belgium
+Carrot,November,storage,Belgium
+Carrot,December,open field,Belgium
+Carrot,January,open field,Belgium
+Carrot,February,open field,Belgium
+Carrot,March,open field,Belgium
+Carrot,April,open field,Belgium
+Carrot,May,open field,Belgium
+Carrot,June,open field,Belgium
+Carrot,July,storage,Belgium
+Beans,August,unheated greenhouse,Belgium
+Beans,September,unheated greenhouse,Belgium
+Beans,October,unheated greenhouse,Belgium
+Beans,November,unheated greenhouse,Belgium
+Beans,December,unheated greenhouse,Belgium
+Beans,January,unheated greenhouse,Belgium
+Beans,February,unheated greenhouse,Belgium
+Endive,March,unheated greenhouse,Belgium
+Endive,April,unheated greenhouse,Belgium
+Endive,May,unheated greenhouse,Belgium
+Endive,June,unheated greenhouse,Belgium
+Endive,July,unheated greenhouse,Belgium
+Endive,August,unheated greenhouse,Belgium
+Endive,September,unheated greenhouse,Belgium
+Endive,October,unheated greenhouse,Belgium
+Endive,November,unheated greenhouse,Belgium
+Endive,December,unheated greenhouse,Belgium
+Lettuce,January,unheated greenhouse,Belgium
+Lettuce,February,unheated greenhouse,Belgium
+Lettuce,March,unheated greenhouse,Belgium
+Lettuce,April,unheated greenhouse,Belgium
+Lettuce,May,unheated greenhouse,Belgium
+Lettuce,June,unheated greenhouse,Belgium
+Lettuce,July,unheated greenhouse,Belgium
+Lettuce,August,unheated greenhouse,Belgium
+Lettuce,September,unheated greenhouse,Belgium
+Brussel Sprouts,October,unheated greenhouse,Belgium
+Brussel Sprouts,November,unheated greenhouse,Belgium
+Brussel Sprouts,December,unheated greenhouse,Belgium
+Brussel Sprouts,January,unheated greenhouse,Belgium
+Brussel Sprouts,February,unheated greenhouse,Belgium
+Brussel Sprouts,March,unheated greenhouse,Belgium
+Brussel Sprouts,April,unheated greenhouse,Belgium
+Cucumber,May,unheated greenhouse,Belgium
+Cucumber,June,unheated greenhouse,Belgium
+Cucumber,July,unheated greenhouse,Belgium
+Cucumber,August,unheated greenhouse,Belgium
+Cucumber,September,unheated greenhouse,Belgium
+Cucumber,October,unheated greenhouse,Belgium
+Tomato,November,unheated greenhouse,Belgium
+Tomato,December,unheated greenhouse,Belgium
+Tomato,January,unheated greenhouse,Belgium
+Tomato,February,unheated greenhouse,Belgium
+Tomato,March,unheated greenhouse,Belgium
+Tomato,April,unheated greenhouse,Belgium
+Bell Pepper,May,unheated greenhouse,Belgium
+Bell Pepper,June,unheated greenhouse,Belgium
+Bell Pepper,July,unheated greenhouse,Belgium
+Bell Pepper,August,unheated greenhouse,Belgium
+Bell Pepper,September,unheated greenhouse,Belgium
+Bell Pepper,October,unheated greenhouse,Belgium
+Leek,November,open field,Belgium
+Leek,December,open field,Belgium
+Leek,January,open field,Belgium
+Leek,February,open field,Belgium
+Leek,March,open field,Belgium
+Leek,April,open field,Belgium
+Leek,May,open field,Belgium
+Leek,June,open field,Belgium
+Leek,July,open field,Belgium
+Leek,August,open field,Belgium
+Leek,September,open field,Belgium
+Onion,October,storage,Belgium
+Onion,November,storage,Belgium
+Onion,December,storage; open field,Belgium
+Onion,January,open field,Belgium
+Onion,February,open field,Belgium
+Onion,March,open field,Belgium
+Onion,April,open field,Belgium
+Onion,May,open field,Belgium
+Onion,June,storage,Belgium
+Onion,July,storage,Belgium
+Onion,August,storage,Belgium
+Onion,September,storage,Belgium
+Zucchini,October,open field,Belgium
+Zucchini,November,open field,Belgium
+Zucchini,December,open field,Belgium
+Zucchini,January,open field,Belgium
+Zucchini,February,open field,Belgium
+Zucchini,March,open field,Belgium
+Zucchini,April,open field,Belgium
+Asparagus,May,open field,Belgium
+Asparagus,June,open field,Belgium
+Asparagus,July,open field,Belgium
+Asparagus,August,open field,Belgium
+Asparagus,September,open field,Belgium
+Potatoess,October,storage,Belgium
+Potatoess,November,storage,Belgium
+Potatoess,December,storage,Belgium
+Potatoess,January,open field,Belgium
+Potatoess,February,open field,Belgium
+Potatoess,March,open field,Belgium
+Potatoess,April,open field,Belgium
+Potatoess,May,open field,Belgium
+Potatoess,June,open field,Belgium
+Potatoess,July,storage,Belgium
+Apple,August,storage,Turkey
+Apple,September,storage,Turkey
+Apple,October,storage,Turkey
+Apple,November,storage,Turkey
+Apple,December,storage,Turkey
+Apple,January,storage,Turkey
+Apple,February,storage; open field,Turkey
+Apple,March,storage; open field,Turkey
+Apple,April,storage; open field,Turkey
+Apple,May,storage; open field,Turkey
+Apple,June,storage; open field,Turkey
+Apple,July,storage,Turkey
+Pear,August,storage,Turkey
+Pear,September,storage,Turkey
+Pear,October,storage,Turkey
+Pear,November,storage,Turkey
+Pear,December,storage,Turkey
+Pear,January,storage; open field,Turkey
+Pear,February,storage; open field,Turkey
+Pear,March,storage; open field,Turkey
+Pear,April,storage; open field,Turkey
+Pear,May,storage,Turkey
+Pear,June,storage,Turkey
+Pear,July,storage,Turkey
+Grapes ,August,open field,Turkey
+Grapes ,September,open field,Turkey
+Grapes ,October,open field,Turkey
+Grapes ,November,open field,Turkey
+Grapes ,December,open field,Turkey
+Grapes ,January,open field,Turkey
+Grapes ,February,open field,Turkey
+Strawberry,March,open field,Turkey
+Strawberry,April,open field,Turkey
+Kiwi,May,open field,Turkey
+Kiwi,June,open field,Turkey
+Kiwi,July,open field,Turkey
+Orange,August,open field,Turkey
+Orange,September,open field,Turkey
+Orange,October,open field,Turkey
+Orange,November,open field,Turkey
+Orange,December,open field,Turkey
+Clementine,January,unheated greenhouse,Turkey
+Mandarin,February,unheated greenhouse,Turkey
+Mandarin,March,unheated greenhouse,Turkey
+Mandarin,April,unheated greenhouse,Turkey
+Mandarin,May,unheated greenhouse,Turkey
+Mandarin,June,unheated greenhouse,Turkey
+Lemon,July,open field,Turkey
+Lemon,August,open field,Turkey
+Lemon,September,open field,Turkey
+Lemon,October,open field,Turkey
+Lemon,November,open field,Turkey
+Lemon,December,open field,Turkey
+Lemon,January,open field,Turkey
+Banana,February,open field,Turkey
+Banana,March,open field,Turkey
+Banana,April,open field,Turkey
+Banana,May,open field,Turkey
+Banana,June,open field,Turkey
+Nectarine,July,open field,Turkey
+Nectarine,August,open field,Turkey
+Nectarine,September,open field,Turkey
+Nectarine,October,open field,Turkey
+Nectarine,November,open field,Turkey
+Nectarine,December,open field,Turkey
+Peach,January,open field,Turkey
+Peach,February,open field,Turkey
+Peach,March,open field,Turkey
+Peach,April,open field,Turkey
+Peach,May,open field,Turkey
+Peach,June,open field,Turkey
+Plum,July,open field,Turkey
+Plum,August,open field,Turkey
+Plum,September,open field,Turkey
+Plum,October,open field,Turkey
+Plum,November,open field,Turkey
+Plum,December,open field,Turkey
+Plum,January,open field,Turkey
+Plum,February,open field,Turkey
+Cherry,March,open field,Turkey
+Cherry,April,open field,Turkey
+Cherry,May,open field,Turkey
+Cherry,June,open field,Turkey
+Cherry,July,open field,Turkey
+Artichoke,August,unheated greenhouse,Turkey
+Artichoke,September,unheated greenhouse,Turkey
+Artichoke,October,unheated greenhouse,Turkey
+Artichoke,November,unheated greenhouse,Turkey
+Artichoke,December,unheated greenhouse,Turkey
+Artichoke,January,unheated greenhouse,Turkey
+Artichoke,February,unheated greenhouse,Turkey
+Artichoke,March,unheated greenhouse,Turkey
+Eggplant,April,unheated greenhouse,Turkey
+Eggplant,May,unheated greenhouse,Turkey
+Eggplant,June,unheated greenhouse,Turkey
+Eggplant,July,unheated greenhouse,Turkey
+Eggplant,August,unheated greenhouse,Turkey
+Eggplant,September,unheated greenhouse,Turkey
+Eggplant,October,unheated greenhouse,Turkey
+Eggplant,November,unheated greenhouse,Turkey
+Eggplant,December,unheated greenhouse,Turkey
+Eggplant,January,unheated greenhouse,Turkey
+Eggplant,February,unheated greenhouse,Turkey
+Eggplant,March,unheated greenhouse,Turkey
+Cauliflower,April,open field,Turkey
+Cauliflower,May,open field,Turkey
+Cauliflower,June,open field,Turkey
+Cauliflower,July,open field,Turkey
+Cauliflower,August,open field,Turkey
+Cauliflower,September,open field,Turkey
+Cauliflower,October,open field,Turkey
+Cauliflower,November,open field,Turkey
+Carrot,December,open field,Turkey
+Carrot,January,open field,Turkey
+Carrot,February,open field,Turkey
+Carrot,March,open field,Turkey
+Carrot,April,open field,Turkey
+Carrot,May,open field,Turkey
+Beans,June,unheated greenhouse,Turkey
+Beans,July,unheated greenhouse,Turkey
+Beans,August,unheated greenhouse,Turkey
+Beans,September,unheated greenhouse,Turkey
+Beans,October,unheated greenhouse,Turkey
+Beans,November,unheated greenhouse,Turkey
+Beans,December,unheated greenhouse,Turkey
+Iceberg Lettuce,January,unheated greenhouse,Turkey
+Iceberg Lettuce,February,unheated greenhouse,Turkey
+Iceberg Lettuce,March,unheated greenhouse,Turkey
+Iceberg Lettuce,April,unheated greenhouse,Turkey
+Iceberg Lettuce,May,unheated greenhouse,Turkey
+Iceberg Lettuce,June,unheated greenhouse,Turkey
+Iceberg Lettuce,July,unheated greenhouse,Turkey
+Iceberg Lettuce,August,unheated greenhouse,Turkey
+Iceberg Lettuce,September,unheated greenhouse,Turkey
+Endive,October,unheated greenhouse,Turkey
+Endive,November,unheated greenhouse,Turkey
+Endive,December,unheated greenhouse,Turkey
+Endive,January,unheated greenhouse,Turkey
+Lettuce,February,unheated greenhouse,Turkey
+Lettuce,March,unheated greenhouse,Turkey
+Lettuce,April,unheated greenhouse,Turkey
+Lettuce,May,unheated greenhouse,Turkey
+Lettuce,June,unheated greenhouse,Turkey
+Lettuce,July,unheated greenhouse,Turkey
+Lettuce,August,unheated greenhouse,Turkey
+Lettuce,September,unheated greenhouse,Turkey
+Lettuce,October,unheated greenhouse,Turkey
+Lettuce,November,unheated greenhouse,Turkey
+Lettuce,December,unheated greenhouse,Turkey
+Brussel Sprouts,January,open field,Turkey
+Brussel Sprouts,February,open field,Turkey
+Brussel Sprouts,March,open field,Turkey
+Cucumber,April,unheated greenhouse,Turkey
+Cucumber,May,unheated greenhouse,Turkey
+Cucumber,June,unheated greenhouse,Turkey
+Cucumber,July,unheated greenhouse,Turkey
+Cucumber,August,unheated greenhouse,Turkey
+Cucumber,September,unheated greenhouse,Turkey
+Cucumber,October,unheated greenhouse,Turkey
+Cucumber,November,unheated greenhouse,Turkey
+Cucumber,December,unheated greenhouse,Turkey
+Cucumber,January,unheated greenhouse,Turkey
+Cucumber,February,unheated greenhouse,Turkey
+Tomato,March,unheated greenhouse,Turkey
+Tomato,April,unheated greenhouse,Turkey
+Tomato,May,unheated greenhouse,Turkey
+Tomato,June,unheated greenhouse,Turkey
+Tomato,July,unheated greenhouse,Turkey
+Tomato,August,unheated greenhouse,Turkey
+Tomato,September,unheated greenhouse,Turkey
+Tomato,October,unheated greenhouse,Turkey
+Tomato,November,unheated greenhouse,Turkey
+Tomato,December,unheated greenhouse,Turkey
+Green Bell Pepper,January,unheated greenhouse,Turkey
+Green Bell Pepper,February,unheated greenhouse,Turkey
+Green Bell Pepper,March,unheated greenhouse,Turkey
+Green Bell Pepper,April,unheated greenhouse,Turkey
+Green Bell Pepper,May,unheated greenhouse,Turkey
+Green Bell Pepper,June,unheated greenhouse,Turkey
+Leek,July,storage; open field,Turkey
+Leek,August,storage; open field,Turkey
+Leek,September,storage; open field,Turkey
+Leek,October,storage; open field,Turkey
+Leek,November,storage; open field,Turkey
+Leek,December,storage; open field,Turkey
+Leek,January,storage; open field,Turkey
+Leek,February,storage; open field,Turkey
+Leek,March,storage; open field,Turkey
+Leek,April,storage; open field,Turkey
+Leek,May,storage; open field,Turkey
+Leek,June,storage; open field,Turkey
+Onion,July,storage,Turkey
+Onion,August,storage,Turkey
+Onion,September,storage,Turkey
+Onion,October,storage,Turkey
+Onion,November,storage; open field,Turkey
+Onion,December,storage; open field,Turkey
+Onion,January,storage; open field,Turkey
+Onion,February,storage; open field,Turkey
+Onion,March,storage; open field,Turkey
+Onion,April,storage; open field,Turkey
+Onion,May,storage,Turkey
+Onion,June,storage,Turkey
+Asparagus,July,open field,Turkey
+Asparagus,August,open field,Turkey
+Asparagus,September,open field,Turkey
+Asparagus,October,open field,Turkey
+White Asparagus,November,open field,Turkey
+White Asparagus,December,open field,Turkey
+Potatoess,January,storage; open field,Turkey
+Potatoess,February,storage; open field,Turkey
+Potatoess,March,storage,Turkey
+Potatoess,April,storage,Turkey
+Potatoess,May,storage; open field,Turkey
+Potatoess,June,storage; open field,Turkey
+Potatoess,July,storage; open field,Turkey
+Potatoess,August,storage; open field,Turkey
+Potatoess,September,storage; open field,Turkey
+Potatoess,October,storage; open field,Turkey
+Potatoess,November,storage,Turkey
+Potatoess,December,storage; open field,Turkey
+Grapes ,July,open field,South Africa
+Grapes ,August,open field,South Africa
+Grapes ,September,open field,South Africa
+Grapes ,October,open field,South Africa
+Grapes ,November,open field,South Africa
+Lemon,May,open field,South Africa
+Lemon,June,open field,South Africa
+Lemon,July,open field,South Africa
+Lemon,August,open field,South Africa
+Lemon,September,open field,South Africa
+Lemon,October,open field,South Africa
+Peach,October,open field,South Africa
+Peach,November,open field,South Africa
+Peach,December,open field,South Africa
+Peach,January,open field,South Africa
+Peach,February,open field,South Africa
+Peach,March,open field,South Africa
+Kiwi,April,open field,New Zealand
+Kiwi,May,open field,New Zealand
+Kiwi,June,open field,New Zealand
+Kiwi,July,open field,New Zealand
+Kiwi,August,open field,New Zealand
+Kiwi,September,open field,New Zealand
+Kiwi,April,open field,Chile
+Kiwi,May,open field,Chile
+Kiwi,June,open field,Chile
+Kiwi,July,open field,Chile
+Kiwi,August,open field,Chile
+Kiwi,September,open field,Chile
+Peach,November,open field,Chile
+Peach,December,open field,Chile
+Peach,January,open field,Chile
+Peach,February,open field,Chile
+Peach,March,open field,Chile
+Peach,December,open field,Argentina
+Peach,January,open field,Argentina
+Peach,February,open field,Argentina
+Orange,February,open field,Egypt
+Orange,March,open field,Egypt
+Orange,April,open field,Egypt
+Orange,May,open field,Egypt
+Orange,June,open field,Egypt
+Orange,July,open field,Egypt
+Orange,August,open field,Egypt
+Orange,September,open field,Egypt
+Orange,October,open field,Egypt
+Satsumas,September,open field,Spain
+Satsumas,October,open field,Spain
+Satsumas,November,open field,Spain
+Satsumas,December,open field,Spain
