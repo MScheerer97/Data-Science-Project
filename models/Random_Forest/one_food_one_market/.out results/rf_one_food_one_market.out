@@ -1,0 +1,38 @@
+	Command being timed: "R CMD BATCH --save --no-restore rf_one_food_one_market.R"
+	User time (seconds): 219.04
+	System time (seconds): 1.60
+	Percent of CPU this job got: 91%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:01.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 736188
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1172137
+	Voluntary context switches: 10086
+	Involuntary context switches: 89
+	Swaps: 0
+	File system inputs: 167200
+	File system outputs: 43128
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n417
+Job ID: 20442706
+Cluster: uc2
+User/Group: tu_zxmef35/tu_tu
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:03:41
+CPU Efficiency: 40.48% of 00:09:06 core-walltime
+Job Wall-clock time: 00:04:33
+Memory Utilized: 658.65 MB
+Memory Efficiency: 1.65% of 39.06 GB
