@@ -1,0 +1,57 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+**Overview: **
+
+In the Tab **Predictor Development**, there will be a extensive (graphical) analysis of the predictors in our data set. To facilitate the analysis, there are different type of predictors in our data set:
+
+1. *Economic variables* e.g. inflation and exchange rates, *Transportation Prices* e.g. Kerosene Price, Crude Oil Price, Diesel Price in Germany and the World Container Index. In addition, *Fertilizer Prices* of Triple Superphosphate, Di-Ammonium Phosphate,
+Urea Fertilizer, Phosphorite, Potassium Chloride.
+
+They only depend on time, and do not have country-food-type-size heterogeneity.
+
+2. *Weather Variables* e.g. the Temperature in Celsius °C, the humidity measured with a hygrometer in grams per kg, Wind speeds measured in m/s, precipitation in millimeters and cloud cover is measured in oktas.
+
+
+These variables depend on the type of fruit/vegetable and the respective country.
+
+Because their variation is different, **predictor development of the (1. Group) will be displayed on this tab**, while weather development will start at the tab "Weather Analysis".
+
+**How do I use this tab?**
+
+Goal: Get an overall graphical "birds eye view" at each predictor of the 1. Group. You can get a first impression at the range of values, their summary statistics and how they relate to market prices.
+
+There are two Inputs that you can manipulate: \
+
+1. Select a predictor variable of 1.Group\
+
+2. Select market \
+
+As an Output, you will get: \
+
+* A Table with Summary statistics for your chosen predictor \
+
+* The development of your chosen predictor over time in a graph \
+
+* The overall relationship between your chosen predictor with market prices in your chosen market in a graph.\
+
+In the second graph, each point represents a certain food-type-size-country combination, the respective price on the market on the y-axis and the value of your chosen predictor on the x-axis.
+
+The line is a fitted line that represents the general direction of effect/impact of your chosen predictor on market prices.
+The fitted line is done by a simple linear regression of the market prices on your predictor. In the tab, *Econometric Analysis*, you can get further information on *regressions*.
+

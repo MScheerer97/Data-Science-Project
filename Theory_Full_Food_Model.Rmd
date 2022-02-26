@@ -1,0 +1,32 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+
+In our analysis, we have train two types of models: full and food model.
+
+* **Full Model**: The full model is a single model trained on the full data set.
+The individual food items are identified via dummy variables. 
+
+* **Food Model**: The food model is a single model for each food item, i.e.,
+we train one model for apples, one for bananas etc. 
+
+In the upcoming analysis, the price predictions are made using the food models as
+they are superior in terms of predictive accuracy to the full models.
+However, the user can explore the hyperparameters and performance measures for
+both the full and food model. 

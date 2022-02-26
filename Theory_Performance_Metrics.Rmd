@@ -1,0 +1,87 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+
+Throughout this explanation, the following notation is used.
+$y_i$ indicates the true price value of observation i while $\hat{y_i}$ indicates the predicted price value of observation i. The total number of observations in the sample is denoted by $n$. 
+
+
+Since predicting prices is a regression task, the following error metrics are used to assess
+the predictive performance of the models. For all error metrics, a value of 0 indicates a perfect prediction. The higher the value of the error metric, the worse the model's performance. In this App, the user can
+explore performance measures both the full and food model.
+
+\
+
+
+The performance measures for the machine learning models are determined via a 5-fold
+cross-validation. 
+A 5-fold time series cross-validation was also conducted. However,
+as it did not improve the models' performance, we only present the results for the traditional
+cross-validation. For the BSTS models a time series cross-validation
+on a monthly basis is conducted. Since the evaluation method for the machine learning
+and time series models is different, differences in predictive performance needs to
+be interpreted with caution.
+
+\
+
+
+* Root Mean Squared Error (RMSE): The RMSE is the square root of the Mean Squared Error (MSE) which is the mean of the squared difference between the predicted and true values. The advantage of the RMSE over the MSE is that the RMSE is on the same unit as the original data. The RMSE is interpreted as the average distance between the true and predicted values. 
+
+  $RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$
+
+\
+
+* Mean Absolute Error (MAE): The MAE is the mean of the absolute difference between the true and predicted values. This error metric tells the user how far the prediction is from the true value on average.
+
+  $MAE = \frac{1}{n} \sum_{i=1}^{n} | y_i - \hat{y}_i|$
+
+
+\
+
+* Mean Absolute Percentage Error (MAPE): The MAPE is the percentage equivalent to the MAE. Thus, it measures the predictive accuracy as percentage. Precisely, it is the average absolute percentage difference between the true and predicted values. Note that this measure does not work for values of zero. In our analysis, this is no probelm as prices never equal zero. 
+
+  $MAPE = \frac{1}{n} \sum_{i=1}^{n} | \frac{y_i - \hat{y}_i}{y_i}|$
+
+<!-- \ -->
+
+<!-- * Median Absolute Error (MedAE): The MedAE is the median of the absolute difference between the true and predicted values. The advantage to the MAE is that the MedAE is robust to outliers. -->
+
+<!--   $MedAE(y, \hat{y}) = median(|y_1 - \hat{y}_1|, \dots, |y_n - \hat{y}_n|)$ -->
+
+<!-- \ -->
+
+<!-- * Max Error ($ME$): The ME captures the worst case error between the true and predicted prices. If the true and predicted values always coincide the ME equals 0. The higher the ME, the worse the model.  -->
+
+<!--   $ME(y, \hat{y}) = max(|y_i - \hat{y}_i|)$ -->
+
+\
+
+
+<!-- * R-squared ($R^2$): $R^2$ is the coefficient of determination, also known as goodness of fit measure. Precisely, the $R^2$ measures the proportion of variance that is explained by the model. Hence, the $R^2$ is a metric of correlation not accuracy. Moreover, it depends on the variation in the outcome.  -->
+
+
+\
+\
+
+*Sources:*
+
+* *Max Kuhn, Kjell Johnson, Applied Predictive Modeling, 2013*
+
+* *Brett Lantz, Machine Learning with R, Third Edition, 2019*
+
+* *https://scikit-learn.org/stable/modules/model_evaluation.html#mean-absolute-error*

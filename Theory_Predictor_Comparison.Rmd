@@ -1,0 +1,38 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+**How do I use this tab?**
+
+Goal: Compare the predictors of 1. Group (for more information click on info Tab in *Single Predictor Analysis*) with each other over time and set a separating date to graphically and analytically asses their values in different time stamps.
+
+There are four Inputs that you can manipulate: \
+
+1. Select first predictor \
+
+2. Select second predictor \
+
+3. Select a date that will work as a separating line, which will graphically distinguish the development of the predictor before the line and after the line and print summary statistics before and after your chosen date. The blue line in the graph is marked at the 1. January of 2020 and denotes the start of the Corona Crisis. We believe that this time point is of intrinsic interest in this tab, as it is a exogenous shock to our predictors. \
+
+4. The "starting" graph contains the all dates that are observed in our data. Generally, they range from the year 2016 to the current date. However, if you wish to look at certain dates e.g. the COVID-19 Pandemy or the year 2017, you can set a new date range. The first date is the new starting date, while the second date marks the end of your new dates. \
+
+As an Output, you will get: \
+
+* Two tables with summary statistics, the first one denotes the summary statistics before your chosen separating date, and the second one after your chosen separating date. Therefore, you can both, graphically and analytically assess the predictor development in different time stamps.
+
+* Two line plots graphs with the development of your chosen predictors over time. The blue line denotes the separating date that you set earlier. 

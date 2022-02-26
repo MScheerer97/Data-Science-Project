@@ -1,0 +1,90 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+Support Vector Machines (SVM) have first been developed by Vapnik and Lerner (1963) for classification tasks.
+First, based on the idea that there might be a hyperplane that perfectly separates two classes 
+of the target in the linear case, the framework considers non-linearity and hence the non-existence of such 
+such a hyperplane. 
+
+To overcome the issues that arise in the linear world, the feature space is enlarged using kernels
+to increase the dimension of the features which is an efficient computational approach.
+
+Two popular kernels are: 
+
+* Polynomial kernel: $\mathcal{K}(x_i, x_i') = (1 + \sum_{j=1}^{p}x_{ij}x_{i'j})^d$ <br>
+with $\mathcal{d}$ indicating the dimension of the polynomial and $\mathcal{p}$ denoting the number of features
+
+* Radial kernel: $\mathcal{K}(x_i, x_i') = exp(-\gamma\sum_{j=1}^{p}(x_{ij}-x_{i'j})^2)$ <br>
+with $\gamma$ denoting a hyperparameter to be tuned
+ 
+
+As the kernels show, one only needs to compute the kernel function for all ${\mathcal N \choose 2}$ 
+pairs of distinct ${\mathcal i, i'}$, rather than directly computing the values in the higher 
+feature space.
+
+The idea of SVM can also be transferred to the regression task. 
+The optimization problem for Support Vector Regression (Vapnik 1995) takes the following form: <br>
+
+
+\begin{equation}
+\begin{split}
+\displaystyle \text{minimize} & \frac{1}{2} \left\Vert{w}\right\Vert^2 + C\sum_{i=1}^{\ell}(\xi_i+\xi_i^*)\\
+\end{split}
+\end{equation} 
+
+\[\text{subject to}\begin{cases}
+    y_i-\langle w, x_i \rangle -b \leqq \epsilon + \xi_i\\
+    \langle w, x_i \rangle + b-y_i\leqq \epsilon + \xi_i^*\\
+    \xi_i, \xi_i^* \geqq 0
+\end{cases}\ 
+\] 
+In this optimization problem, $w$ is introduced as the  $\ell_2$ norm of the coefficient vector,  $\xi$ and $\xi^*$ are slack variables capturing the error and $\epsilon$ controls the width of the tube being approximated illustrating the 
+$\epsilon$-sensitive loss function. In essence, $\epsilon$ reflects the error tolerance as deviations smaller than 
+$\epsilon$ are considered as $0$. The Errors are therefore denoted as the deviation from the margin $\epsilon$ in 
+$\xi$ and $\xi^*$. <br>
+
+Finally, $C$ denotes a regularization parameter to be tuned. It indicates the 
+weight to minimize the error. To sum up the idea of Support Vector Regression, in contrast to simple linear regression, an error tolerance is imposed to achieve regularization. <br>
+
+The optimization problem is then solved by constructing a Lagrange function. Moreover, it can be shown that the algorithm can be described by dot products between the data. 
+
+Additionally, the features are transformed using z-scores to obtain data with zero mean and a standard deviation of one: 
+<p style="text-align: center;">*z-Score Normalization*: $z_i= \frac{x_i-\overline{x}}{\sigma}$ </p><br>
+
+The following illustration might be useful to understand how the algorithm works:
+<br>
+
+<center>
+<p align="center">
+  <img width="500" src="https://www.researchgate.net/publication/320916953/figure/fig5/AS:558241656836098@1510106590271/Schematic-of-the-one-dimensional-support-vector-regression-SVR-model-Only-the-points.png"/>
+</p>
+</center>
+<center>
+<font size="1"> (Source: Kleynhans et al., 2017, p. 8) </font>
+</center>
+<br>
+
+\
+\
+
+*Sources*
+
+* *Smola A. J., Schölkopf B., 2004, A tutorial on support vector regression*
+* *James et al., 2017, An Introduction to Statistical Learning*
+* *Klyenhans et al., 2017, Predicting Top-of-Atmosphere Thermal Radiance Using MERRA-2 Atmospheric Data with Deep Learning*
+* *Crone et al., 2006, The Impact of Preprocessing on Support Vector Regression and Neural Networks in Time Series Prediction*

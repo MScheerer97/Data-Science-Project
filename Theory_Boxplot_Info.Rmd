@@ -1,0 +1,32 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+
+The **Box Plot** is a very common method of displaying the relationship of a categorical and a continuous variable. In our case, we can apply the Box Plot to discover discrepancies between the different markets for all the different fruit and vegetable types. 
+
+The plot reveals interesting details about the underlying distribution as it portrays the median, the first and third quartiles and outliers. Points outside 1.5 times the interquartile range, marked by the two whiskers, can be defined as outliers. Moreover, one can discover information about the skewness of the data by examining the symmetry of the upper and lower part of the box.
+
+By choosing the preferred level of aggregation, the user can discover potential differences between different years, months and across markets. 
+
+\
+\
+
+*Sources*
+
+* *Hadley Wickham, 2015, ggplot2 - Elegant Graphics for Data Analysis*
+* *Michael J. Crawley, 2013, The R Book*

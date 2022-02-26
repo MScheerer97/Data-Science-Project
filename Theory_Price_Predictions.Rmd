@@ -1,0 +1,94 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+In this tab, the user can make price predictions for the upcoming four weeks. 
+The price predictions are available for five 5 wholesale markets in Germany: 
+Berlin. Cologne, Frankfurt, Hamburg, and Munich.
+
+
+The price predictions are the predicted average price for the selected fruit or 
+rather vegetable in the respective calendar week on
+the selected wholesale markets. Instead of presenting the calendar week, 
+we display the date of the Monday of the respective calendar week.  
+
+\
+
+The structure of the tabs is as follows:
+      
+* **Theory**: The 'Theory' tab describes the theory of the models used to make 
+the price predictions.
+      
+* **Hyperparameter**: In the 'Hyperparameter' tab, the user can explore the 
+hyperparameters chosen for the machine learning models.
+The hyperparameters are determined through a 5-fold cross-validation. The 
+parameter combination which yields the smallest RMSE
+on the training data is chosen as the 'best' parameter combination and used 
+to train the final model. 
+      
+* **Predictive Performance**: In the 'Predictive Performance' tab, the user can 
+explore the error metrics for the models used to
+predict prices. The error metrics are determined via a 5-fold cross-validation. 
+      
+* **Feature Importance**: In the 'Feature Importance' tab, the user can learn about
+the predictors which seem to be most important
+for the price prediction task.
+      
+* **Price Prediction**: Finally, in the 'Price Prediction' tab, the user can make 
+predictions for each food-type-size-country combination on
+all five wholesale markets using a model of choice. The predictions can be made 
+up to four weeks in the future.
+
+
+\
+
+\
+
+#### Type of Models
+
+In our analysis, we have trained two types of models: full and food model.
+
+* **Full Model**: The full model is a single model trained on the full data set.
+The different kinds of fruits and vegetables are identified via dummy variables. 
+
+* **Food Model**: The food model is a single model for each food item, i.e.,
+one model is trained for each fruit and vegetable. 
+
+In the upcoming analysis, the price predictions are made using the food models as
+by using those, we avoid facing homogeneous effects. Nevertheless,
+the predictive performance is very similar for both the food and full model. 
+This can be explored in the 'Predictive Performance' tab. Moreover, the user
+can explore the choice of hyperparameters for the final training for both
+the full and food model.
+
+\
+
+\
+
+#### Missing Values Handling 
+
+* Sometimes the price variables contain missing values. In this case, the missing
+values are replaced using chained random forests (`missRanger` function and package).
+In chained random forests random forest imputation is combined with predictive mean matching. 
+This ensures that the imputations are natural and their distribution realistic. 
+
+* For all other missing values, for instance exchange rate, the missing values
+are replaced by the previous values. However, for lagged values, the next
+value is used. 
+      
+

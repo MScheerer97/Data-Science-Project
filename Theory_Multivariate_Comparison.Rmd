@@ -1,0 +1,45 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+**How to use this part of the RShiny App: **
+
+Goal: Combine the weather predictors & non-weather predictors (for more information click on info Tab in *Single Predictor Analysis*) to assess a single-item multivariate comparison on market prices. At the end, market prices depend on the joint effect of all predictors, thereby, assessing their development over time and comparing price fluctuations is key to understand the general relationship in our data.
+
+For a multi-item multivariate comparison and to get a analytical, rather than visual look at the relationship between predictors and market prices, one can look at the tab *Econometric Analysis*, where this analysis can be done with a *multiple linear regression*.
+
+In this tab, you can compare the development of the price on a specific market for your chosen food-type-size-combination, 
+the development of a chosen weather variable and the development a non-weather predictor variable. Each variable development will be represented by a respective line plot. In total, there are three line plots to manipulate.
+
+There are ten Inputs that you can manipulate: \
+
+1. From Inputs 1 - 5, you must select a certain food-type-size-country combination.
+
+6. Select the date for the graphs. First selected date is the starting date for the graphs, while the second selected one is the ending date for the graphs. The date starts in the year 2016 and ends at the current available date. When filtering in between those dates, the graph will zoom in on your newly selected dates
+
+7. Select a market to get the specific price on that market for your chosen food-type-size-country combination
+
+8. Select weather variable
+
+9. Select non-weather predictor
+
+10. Select a date for the vertical line in the graphs on the right side, that will separate the development of one variable on a certain date. This is done to compare the development before a certain date and after a certain date. The default vertical line is marked at the 1. Jan of 2020. This denotes the start of the Corona Crisis and makes and interesting first separating date, as the Corona Crisis adds new exogenous variation.
+
+As an Output, you will get: \
+
+* Three line plots: one for the market price of a specific food-type-size-country combination, the second one for a chosen weather variable, and the third one for a non-weather predictor

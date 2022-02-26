@@ -1,0 +1,25 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+Finally, the **Food Basket** can be created by deselecting items (e.g. due to allergies or personal preferences) and choosing specific fruits and vegetables after evaluating their nutritional values or environmental impact.
+
+To facilitate the evaluation process and enable the user to gather information of individual relevance, three nutrients of interest can be selected as desired. Additionally, the user can select a single market and a price range per 1kg per item to include budget restrictions. 
+
+In the end, the user can select preferred items and a food basket will be created based on the selection by choosing specific items by minimizing the price and finally a comparison with an official dietary recommendation. These recommendations are based on the PAL Level, Gender and Age and can be evaluated on a daily or weekly basis.
+
+Please proceed to the tab *Preferences* to assemble your personal food basket.

@@ -1,0 +1,26 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify}
+</style>
+
+\
+
+#### **Missing Values Imputation**
+
+* Sometimes the price variables contain missing values. In this case, the missing
+values are replaced using chained random forests (`missRanger` function and package).
+In chained random forests random forest imputation is combined with predictive mean matching. 
+This ensures that the imputations are natural and their distribution realistic. 
+
+* For all other missing values, for instance exchange rate, the missing value
+is replaced by the previous value. 

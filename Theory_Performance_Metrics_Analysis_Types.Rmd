@@ -1,0 +1,52 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+In this tab, we distinguish between four analysis types:
+
+* **Select Food Manually**: You can manually choose a fruit/vegetable or even
+a specific food-type-size-country combination to explore performance differences
+across models and markets.
+
+
+* **Show Best**: You can select the number of fruits/vegetables or food-type-size-country combinations
+you would like to have displayed which perform *best* for your chosen prediction model(s) and market(s).
+This analysis type makes most sense if you select only one model and one market. If you decide to
+select multiple models and or markets, they are sorted together according to your chosen error metric,
+and the selected number of best combination are displayed.
+
+
+* **Show Worst**: You can select the number of fruits/vegetables or food-type-size-country combinations
+you would like to have displayed which perform *worst* for your chosen prediction model(s) and market(s).
+This analysis type makes most sense if you select only one model and one market. If you decide to
+select multiple models and or markets, they are sorted together according to your chosen error metric,
+and the selected number of best combination are displayed.
+
+
+* **Show Overall Mean**: Error metrics can be compared across markets and models aggregated for
+all fruits and vegetables. 
+
+
+Generally, the error metrics are displayed for the food model. You can compare them, however,  
+to the full model by selecting 'Show overall mean'. Then, the comparison is 
+provided within the 'Comparison Full Model' tab. 
+
+\
+
+If you choose 'Aggregate' in the model selection, the mean error metrics across
+the markets are displayed. 

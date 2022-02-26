@@ -1,0 +1,31 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+The **Histogram** shows the distribution of a single continuous variable. They are created by binning the data points and then calculating the number of total observations in each bin. This procedure is, however, not trivial as the story that is reflected in the Histogram depends dramatically on the bin width which is the foundation for the calculation of the Histogram. 
+
+Therefore, the user can manually change the bin width and is in the position to obtain profound insights. Furthermore, the user has the choice to display the density curve. 
+In our case, for each food item and for each market the data can be aggregated as explained in the aggregation level pop-up. Potential discrepancies between years, months and across markets can be examined. 
+
+\
+\
+
+*Sources*
+
+* *Hadley Wickham, 2015, ggplot2 - Elegant Graphics for Data Analysis*
+* *Michael J. Crawley, 2013, The R Book*
+

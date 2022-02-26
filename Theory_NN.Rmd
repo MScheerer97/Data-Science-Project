@@ -1,0 +1,89 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+Neural Networks are widely applied algorithms that transfer the logic of biological neural systems 
+to the domain of Data Science. Today a plethora of different types with varying applications 
+are being developed, especially for classification tasks. Popular implementations encompass 
+Natural Language Processing and the analysis of visual data. 
+
+However, as Neural Networks can also be used for regression problems, a *multilayer perceptron* 
+or *feed-forward neural network* can be applied to predict a continuous target. 
+The (fully connected) multilayer perceptron consists of an input layer with input neurons, in essence the
+features of a model, multiple hidden layers with varying numbers of neurons and an output layer. 
+Within this construct all neurons are interconnected with the neurons of the next layer by different weights.
+
+The outputs for every neuron are therefore the sum of the inputs that go into each node which are 
+modified by a non-linear transformation, the *activation function*. As a common function for the modification 
+of the inputs, the *sigmoid function* $\mathcal{y} = \frac1{1+e^{-z}}$ is
+applied. Furthermore, the output of the corresponding nodes are scaled by the connecting weights and then fed
+forward to the next layer of the network. 
+
+The training procedure of a multilayer perceptron involves the determination of the individual weights. 
+This can be achieved using the gradient descent in the *backpropagation* (Rumelhart et al., 1986) algorithm to
+compute a (local or global) minimum of the error by successively updating the weights. 
+<br>
+
+The following formulas are the basis for the algorithm:
+<br>
+<p style="text-align: center;">*Error Formula*: $e=y_i-\hat{y}_{i}$, 
+<br>with $\hat{y}_{i}$ denoting the prediction of the i-th observation in the output layer </p> 
+<br>
+
+<p style="text-align: center;">*Loss Function*: $\varepsilon=\frac12\sum_{i}(y_i-\hat{y}_{i})^2$ </p> 
+<br>
+<p style="text-align: center;">*Input Values*: $v_j=\sum_{i=0}^{m}w_{i,j}x_i$, 
+<br>
+with $x_i$ denoting the value of input $i$ at neuron $j$ and $w_{i,j}$ the synaptic weights of input $i$ at neuron $j$</p> 
+<br>
+
+<p style="text-align: center;">*Function Signal*: $y_j=\varphi_j(v_j)$, 
+<br>
+with $\varphi_j$ denoting the activation function used at neuron $j$</p> 
+<br>
+
+Based on these formulas, it can be shown, that the weight adjustment is defined by:
+<br>
+
+<p style="text-align: center;">*Weight Adjustment*: 
+$\Delta w=-\eta\frac{\partial{\varepsilon}}{\partial{w_{i,j}}}$,  
+with $\eta$ denoting the learning rate </p>
+<br>
+In essence, the algorithm searches for weight adjustments that lead to decreasing loss. 
+Additionally, the input data in the input layer are transformed using the min-max normalization to obtain data with in the interval [0, 1]. Due to better performance we opted for this data preprocessing method.
+<p style="text-align: center;">*Min-Max Normalization*: $z_i= \frac{x_i-Min(x)}{Max(x)-Min(x)}$ </p>
+<br>
+The following illustration might be useful to understand how the algorithm works:
+<br>
+
+<p align="center">
+  <img width="500" src="https://www.researchgate.net/profile/Mohamed-Zahran-16/publication/303875065/figure/fig4/AS:371118507610123@1465492955561/A-hypothetical-example-of-Multilayer-Perceptron-Network.png"/>
+</p>
+
+<p style="text-align: center;">(Source: Hassan et al., 2015, p. 252)</p> 
+<br>
+
+\
+\
+
+*Sources*
+
+* *Donald F. Specht, 1991, A General Regression Neural Network*
+* *Zhang J.S., Xie X. T., 2011, Study about Forecasting of Vegetable Prices Based on Neural Network*
+* *Hassan et al., 2015, Assessment of artificial neural network for bathymetry estimation using high resolution satellite imagery in shallow lakes: case study El Burullus lake*
+*Haykin Simon, 2009, Neural Networks and Learning Machines*
+* *Crone et al., 2006, The Impact of Preprocessing on Support Vector Regression and Neural Networks in Time Series Prediction*

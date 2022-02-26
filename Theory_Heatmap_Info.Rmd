@@ -1,0 +1,31 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+Since the development over time might be of interest, a **Heatmap** is a good choice to display the data, as it allows to visualize three variables within a single plot. By coloring each *tile* with the mean prices per month and per year, the price development can be easily assessed. The colorbar on the right-hand side of the plot illustrates the magnitude of the mean price of a given month in a given year. 
+
+Hence, for this plot no aggregation is necessary, as both dimensions are accounted for. The prices for each market and for each food item can be analyzed individually. Additionally, the time series plot might be very useful to compare two different items across markets. 
+
+\
+\
+
+*Sources*
+
+* *Hadley Wickham, 2015, ggplot2 - Elegant Graphics for Data Analysis*
+
+

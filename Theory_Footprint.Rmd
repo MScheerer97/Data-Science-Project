@@ -1,0 +1,39 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+In this tab, the user can explore the carbon and water footprint of each
+fruit and vegetable included in the app. The carbon and water footprint is only
+available for open field cultivation. It is defined as follows:
+
+* **Carbon Footprint**: kg CO2 equivalent per kg of food.
+
+* **Water Footprint**: liters of water per kg of food.
+
+The carbon and water footprint address different environmental issues: climate change
+and freshwater scarcity. 
+More precisely the carbon footprint measures the anthropogenic emission of greenhouse
+gases while the water footprint measures the human appropriation of freshwater
+resources in terms of volumes of water consumed and polluted.
+
+\
+
+*Sources:* 
+
+* *A. Ertug Ercin and Arjen Y. Hoekstra, Concepts, Methodologies and Policy Responses, Carbon and Water Footprints, 2012*
+
+* *SU-EATABLELIFE, https://www.sueatablelife.eu/en/ (last accessed on 1st November, 2022)*

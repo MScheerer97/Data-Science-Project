@@ -1,0 +1,39 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+In this tab, the user can learn about the **price development** of various fruits and vegetables at five wholesale  markets in Germany from 2016 to today by using different data aggregation methods. The markets are located in the following cities:
+
+* Berlin
+
+* Hamburg
+
+* Cologne
+
+* Frankfurt
+
+* Munich
+
+\ 
+
+By analyzing the different data visualizations and descriptive statistics a profound comparison between food types and between markets is possible. Therefore, the user is enabled to understand how different prices have developed over the years and might identify discrepancies. 
+
+\ 
+
+Please proceed to the tab *Descriptive Statistics* at the top to start with the exploration. 
+

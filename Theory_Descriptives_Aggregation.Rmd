@@ -1,0 +1,50 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+Depending on the level of aggregation, the descriptive statistics will be calculated by grouping the data before the computation. 
+
+For instance, if the mean of a given item for the different months is of interest, then the prices will be grouped into months and for each month the descriptive statistics can be retrieved.
+
+The following formulas for the **mean** illustrate the logic. Please note, the computation for all other statistics proceeds accordingly.
+
+<br>
+
+* No Aggregation:
+$\overline{x} = \frac{1}{N} \sum_{i}^{N}x_i$, 
+with $N$ denoting the total number of items and $x_i$ the price of item $i$ <br>
+$\rightarrow$ resulting in *one* value per statistic<br>
+
+<br>
+
+* Monthly Aggregation: 
+$\overline{x}_m = \frac{1}{N} \sum_{i \in m}^{N}x_i$, 
+with m denoting the month<br>
+$\rightarrow$ resulting in *twelve* values per statistic<br>
+
+<br>
+
+* Yearly Aggregation: 
+$\overline{x}_y = \frac{1}{N} \sum_{i \in y}^{N}x_i$, 
+with y denoting the year<br>
+$\rightarrow$ resulting $Y$ values per statistic, 
+with $Y$ being the number of different years in the data
+
+<br>
+
+
+**_NOTE:_**  The combined aggregation of years and months was omitted as this would result in an overwhelmingly large output.

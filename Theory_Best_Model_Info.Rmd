@@ -1,0 +1,52 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+\
+
+
+In this tab, the user can explore which model(s) perform(s) 
+
+* overall best (select **Overall**): all food items are aggregated into one.
+
+* best for a specific food item (select **Only Food**): the type, size, and country of each food item is neglected. For instance, one explores
+the best performing model(s) for Apples, Bananas etc.
+
+* best for a specific food-type-size-country combination (select **Food-Type-Size-Country**): for instance, which models performs best for Apples of type Boskoop, mixed
+size from Germany. 
+
+For all three possibilities a differentiating across markets is possible. 
+
+\
+
+The naive predictions include the 'naive' mean and 'naive' median predictions, They
+are called 'naive' since in this case, one would simple use the mean or median
+prices as predicted value. Hence, the user may exclude those models in his or
+her exploration.
+
+\
+
+The user may also not be interested in the BSTS model (time series predictions).
+Since the predictive performance of those models is evaluated via a time-series
+cross-validation on a monthly basis, performance differences between the
+machine learning and time series models should be interpreted with caution.
+The reader should be reminded that the predictive power of the machine learning models
+is evaluated via a usual 5-fold cross-validation. Conducting the same cross
+validation procedure as for the BSTS models may increase the model's performance.
+However, as this leads to a extremely high computational burden, this is out of 
+the scope of this project. 

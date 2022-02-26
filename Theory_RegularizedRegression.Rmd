@@ -1,0 +1,107 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+
+Regularized regression can be thought of an improvement over linear regression as it prevents overfitting. To be more precise, regularization is a technique that shrinks relatively unimportant model parameters towards zero or even exactly zero. As a result, the predictions made on new data have less variance. 
+
+There are three commonly used regularization techniques:
+
+* Ridge
+
+* Least Absolute Shrinkage and Selection Operator (LASSO)
+
+* Elastic Net
+
+\
+
+All three techniques are similar to the least squares estimation procedure which estimates 
+the regression coefficients $\beta_0, \beta_1, \dots, \beta_k$ by minimizing the residual sum of squares (RSS):
+
+$RSS = \sum_{i=1}^{n} (y_i + \beta_0 - \sum_{j=1}^p \beta_j x_{ij})$
+
+For the tree regularization techniques, however, the loss function is extended by adding a
+penalization term.
+
+\
+
+#### Ridge
+
+The Ridge regularization technique uses the $\ell_2$ norm as penalty. The $\ell_2$ penalty in the ridge regression only shrinks the estimates towards 0 while keeping all predictors in the final model. The regression coefficients in the ridge regression are determined by minimizing 
+
+$RSS + \lambda \sum_{j=1}^{p} \beta_j^2$
+
+\
+
+#### LASSO
+
+The LASSO regularization technique uses the $\ell_1$ norm as penalty. If the amount of shrinkage penalty is sufficiently large, the $\ell_1$ penalty used in LASSO forces some of the estimated coefficients to become exactly zero. Hence, the LASSO regression could be used for feature selection. The regression coefficients in the LASSO regression are determined by minimizing 
+
+$RSS + \lambda \sum_{j=1}^{p} |\beta_j|$
+
+\
+
+#### Elastic Net
+
+The Elastic Net regularization technique combines the $\ell_1$ and $\ell_2$ norm. The regression coefficients in the Elastic Net regression are determined by minimizing 
+
+$RSS + \lambda \sum_{j=1}^{p} (\frac{1-\alpha}{2} \beta_j^2 + \alpha |\beta_j|)$
+
+
+\ 
+\
+
+
+---
+
+The strength of shrinkage, $\lambda$, and the importance of the $\ell_1$ vs. the $\ell_2$ norm, $\alpha$ are hyperparameters. As can be seen in the formulas above, the Elastic Net penalty equals the LASSO penalty for $\alpha =1$ and the Ridge penalty for $\alpha = 0$. 
+
+For parameter tuning in the LASSO and ridge regression a grid of 500 random values for $\lambda$ between 0 and 1 is generated. In the elastic net regression, the parameter tuning is performed using a grid of 900 random values for both the $\lambda$ and $\alpha$ parameters. 
+
+---
+
+Moreover, all features, including the dummy variables, are standardized to have zero mean and unit variance.
+This ensures that all variables are on the same scale and therefore the model fit
+is independent on the scale on which the features are measured.
+
+\
+
+For the regularized regression models, training a separate model for each fruit and vegetable is
+appropriate as it accounts for the fact that the features have a different influence on each fruit 
+or rather vegetable. For instance, frost probably has a different impact on the growing conditions 
+of bananas and apples. Training one model including all fruit and vegetable types would require
+to manually include interaction terms which is very time consuming. However, to compare
+the predictive performance between the food and full model, this is done (without
+interaction terms). 
+
+\
+
+Finally, the reader should be reminded that all three regularized regression models
+assume that the relationship between features and outcomes (i.e., the prices)
+is linear. We have included non-linear terms for the weather variables as this
+is done in the literature. However, as those non-linear terms were set to 0
+and the predictive performance was unchanged, we excluded them in the final
+models. 
+
+\
+\
+
+*Sources:* 
+
+* *Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, An Introduction to Statistical Learning with Applications in R, Second Edition, 2021.*
+
+* *Robert Tibshirani, The lasso method for variable selection in the Cox Model, Statistics in Medicine, 1998.*

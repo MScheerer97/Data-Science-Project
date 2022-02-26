@@ -1,0 +1,56 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+**Goal & General Information**
+
+Goal: Get an overview of the weather variables: temperature, humidity, precipitation, wind speeds and cloud cover (for more information click on info Tab in *Single Predictor Analysis*) for different vegetables/ fruits and different origin countries. Additionally, a comparison of your chosen weather variable across different foods, countries and food types.
+
+To understand the selection, one must first understand how we collected the weather of different fruits/ vegetables.
+
+We can observe market prices of different food-type-size-country combinations, but their exact origin is sadly not known.
+We know their origin country but not exactly their city names or latitude/ longitude information. In this case, we had to make a trade off: get weather information that as close as possible reflects the true weather without imputing a false/fake weather information. 
+
+Therefore, we looked at the suppliers of fruits/vegetables on a website: (https://www.europages.co.uk/companies/fruit%20&%20vegetables.html), and manually assessed their most likely origin city. They can be seen when clicking on *By Country*, *By Category* and *Map Display*. Some fruits/ vegetables that come from the same country e.g. Italy, Germany, Spain are distinguished by city, which means that they have a different city for fruits, and another one for vegetables. Other countries, where information is rare e.g. Egypt, fruits/ vegetables share the same origin city. By manually looking at each fruit/ vegetables-country combination we wanted to get the most accurate weather without distorting/ biasing the data. 
+Of course, this website gives us the geographical locations of some suppliers and not all. And of course, the imputed cities might not be the exact origin cities of the fruits/ vegetables. The alternative that we faced, was to use aggregated country level weather rather than location-specific data. However, our assessment was, to use the best information available.
+
+As a result, weather is not available for each food-type-size-country combination but only for each food (in this case vegetables or fruits)-country combination.
+
+Furthermore, what interests us for Machine-Learning-purposes and exploratory data analysis-purposes, is not just the observed weather for fruits/ vegetables but also the deviation of it to *normal historical weather*. The general goal of the deviations is to assess the effect of untypical/abnormal weather conditions on observed market prices. The normal historical weather is calculated by taking the average weather for a certain city over the last n-years:
+Suppose we observe a temperature of 16 °C in Murcia, Spain (taken as origin city for the fruits in Spain) on the 1. January of 2016. The *normal historical weather* is calculated by taking the mean weather on this date of all years up from 2000 to 2016.
+In this case the normal historical weather on this date was 15.4 °C. The deviation is calculated by subtracting the observed weather with the historical normal weather e.g. in this case + 0.6 °C. Consequently this is done for all other weather variables for Murcia on this date.
+As a result, the last 16 years are used as summarizing data. Suppose next year, on the 1. January 2017, we observe a temperature of 16 °C. The historical normal weather is now calculated by taking the mean/ average temperature of the last 17 years, from 2000 to 2017. This underlines the dynamic calculation of the historical weather, as with each observed year, the normal historical weather is calculated with more and more years. This is done to get more accurate historical normal weather and to better capture real outliers and abnormal weather.
+
+**How to use this tab?**
+
+There are two four Inputs that you can manipulate: \
+
+1. Select whether you want to get weather information for fruits or vegetables \
+
+2. Select origin country of your food \
+
+3. Select weather variable and deviations weather variables\
+
+4. Select a variable that will give you median weather variable for all countries, foods and vegetables/fruits. This is done to compare your chosen food-country-weather combination with overall weather information and to assess different values and different deviations \
+
+As an Output, you will get: \
+
+* A histogram (a bar plot that counts the number of temperatures in certain intervals) with your chosen weather variable for each year. In this way, you can check weather development and weather deviations in each year.
+
+* A bar plot with the median value of your chosen weather variable across all countries, or food, or food types.
+
+Consequently, you can have a univariate weather analysis but in combination with summary statistics to really assess individual weather influence with the overall weather influence.

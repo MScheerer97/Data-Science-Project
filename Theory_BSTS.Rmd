@@ -1,0 +1,128 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+To predict prices using statistical models, a time series model seems to
+be perfect. Generally, two types of time series models are used in the literature:
+
+* (Seasonal) Autoregressive Integrated Moving Average ((S)ARIMA) model
+
+* Bayesian Structural Time Series (BSTS) model
+
+\
+
+In our analysis, we go with the BSTS model as in empirical studies this model outperforms
+the ARIMA model. 
+
+
+<!-- it has several advantages over the ARIMA model: -->
+
+<!-- * Deals with uncertainty in a better way as one can quantify the posterior uncertainty of the individual components, control the variance of the components, and impose prior beliefs on the model.  -->
+
+<!-- * It's representation does not rely on lags and moving averages which makes it more transparent. -->
+
+<!-- * In many empirical studies the BSTS model outperforms the ARIMA model.  -->
+ 
+
+\
+
+
+**Bayesian Structural Time Series Model**
+
+The BSTS is proposed by Scott and Varian (2013). The model consists of two components:
+
+* The time series component captures the seasonal patterns and general trends in the data.
+
+* The regression component captures the impact of the data. 
+
+\
+
+Generally, the BSTS model can be written as:
+
+$y_t = \mu_t + \tau_t + \beta^T x_{t} + e_t, e_t \sim N(0, \sigma_e^2)$
+
+where 
+
+* $y_t$ is the series we are modelling, i.e., the food prices at time t. 
+
+* $x_t$ is the feature matrix, i.e., other time series which we assume are predictive for food prices.
+
+* $\mu_{t} = \mu_{t-1} + \delta_{t-1} + u_t, u_t \sim N(0, \sigma_u^2)$ is the current 
+level of the local linear trend with $\delta_t = \delta_{t-1} + v_t, v_t \sim N(0, \sigma_v^2)$ 
+being the current slope of the trend. The local linear trend model assumes that 
+both the mean and slope of the trend follow random walks. 
+Using a local linear trend in our model is reasonable as we are
+interested in short term predictions (one to four weeks). 
+<!-- For long term forcasting a semi-local -->
+<!-- linear trend should be used.  -->
+
+* $\tau_t = - \sum_{s=1}^{S -1} \tau_{t-s} + w_t, w_t \sim N(0, \sigma_w^2)$ is the seasonal component. 
+It can be thought of as a regression 
+on $S$ dummy variables with coefficients constrained to sum to one (in expectation).
+In our analysis, we include an annual seasonal component with $S = 52$ weeks.
+
+All three parameters, $x_t$, $\tau_t$, and $\mu_t$ are estimated simultaneously 
+in order to avoid spurious relationships. Moreover, the seasonal and local linear
+trend components are Markov Chain Monte Carlo (MCMC) samples from a posterior.
+
+
+To understand the value of our predictors, we also fit a pure time series model.
+This model is equivalent to the BSTS model above expect that the regression
+component is missing. In the app, the BSTS model with predictors is denotes
+as 'BSTS' while the BSTS model without predictors is denoted as 'BSTS Baseline'.
+
+
+The error metrics are determined via cross-validation on a rolling basis. To be more precise,
+all observations in the year 2016 are used as training data to start with. Then, predictions
+are made for the next four weeks. Those four weeks are then added as training data for the next round
+where predictions are made for the subsequent four weeks. This process continues until no test
+observations are left. This idea
+is also called time series split cross-validation. As a result, the predictions visualized in the
+app, start in 2017 for the BSTS models (note: for the other models, they start in 2016).
+Moreover, in contrast to the
+machine learning models a separate model for each food-type-size-country information
+is created. Otherwise, we would not have a unique time series. 
+
+
+The user should be informed that the BSTS model is fitted with the default parameters.
+A performance gain may be achieved by setting Bayes-related parameters such as prior
+probability distributions. However, this is out of the scope of this project. 
+Moreover, the Gaussian assumption is not fulfilled. Hence, the model is fitted assuming
+a conditional Gaussian distribution. 
+
+
+<!-- Check: The model is fitted using a Markov chain Monte Carlo algorithm, Kalman filter.  -->
+
+<!-- \ -->
+
+<!-- Check: Gaussian assumption -->
+
+
+\
+\
+
+*Sources*
+
+* *Kim Larsen, 2016, https://multithreaded.stitchfix.com/blog/2016/04/21/forget-arima/ (last access, January, 20, 2022)*
+
+* *Steven L.Scott, Hal Varian, 2013, Predicting the Present with Bayesian Structural Time Series*
+
+* *Yoo, D.I., 2016, Vegetable Price Prediction Using Atypical Web-Search Data*
+
+* *R Documentation for bsts() function*
+
+* *Soumya Shrivastava, Cross Validation in Time Series, 2020, medium*

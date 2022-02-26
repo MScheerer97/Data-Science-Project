@@ -1,0 +1,75 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+
+eXtreme Gradient Boosting (XGBoost) is based on an ensemble of decision trees. Since XGBoost applies boosting the trees are created sequentially by learning from past grown trees in order to reduce their errors. 
+
+For XGBoost the gradient boosting framework by Friedman (2001) is implemented and improved.
+
+* XGBoost's scalability allows the system to learn more than ten times faster as existing gradient boosting machine through distributed and parallel computing on a single machine.
+
+* Feature subsampling at each node ensures that not always the strongest predictors are chosen but also weaker predictions have a chance. 
+
+* Shrinkage is used in order to decrease the influence of each individual tree, leaving room for model improvement through following trees.
+
+* The loss function of the traditional gradient boosting is adjusted by implementing $\ell_1$ and    $\ell_2$ regularization:
+
+  $\mathcal{L}(\phi) = \sum_i \ell(\hat{y}_i, y_i) + \sum_k \Omega(f_k)$
+
+  where $\ell$ denotes the loss function, $\hat{y}_{i}^{t}$ the prediction of the i-th observation,  and $\Omega(f_k) =  \gamma T + \frac{1}{2}\lambda||w||^2$  the regularization term whereby $f_k$ denotes a classification tree. 
+
+
+In the regularization term both $\gamma$ and $\lambda$ are hyperparameters to be tuned. Moreover, the maximum depth of the tree, $tree\_depth$, the number of trees, $trees$, the number of predictors randomly selected at each split, $mtry$, the minimum number of observations in a terminal node, $min\_n$, and the step size shrinkage also called learning rate $learn\_rate$ are tuning parameters. The researcher could also tune the proportion
+of observations sampled. In our analysis, the tuning process revealed that only
+the following parameters have a significance influence on the model performance. The
+values tried for both the full and food model are:
+
+* *tree depth*: 3, 6, 9, 12
+
+* *trees*: 100, 500, 700, 800, 1000, 1500
+
+* *mtry*: $(P/3) - 60 \approx 13, (P/3) - 50 \approx 23, (P/3) - 40 \approx 33,(P/3) - 20 \approx 53, (P/3) \approx 73, (P/3) + 50 \approx 123, (P/3) + 100 \approx 173, P = 219$
+whee $P$ denotes the total number of predictors in the data set.
+
+* *min n*: 1, 3, 5, 10, 50, 100
+
+* *learning rate*: 0.001, 0.01, 0.03
+
+\ 
+
+To train the XGBoost model, an additive learning process is conducted in which the loss function is minimized by adding a tree (the weak learner in the model), while leaving existing trees in the model unchanged. Second order approximation is used to optimize the following loss function:
+
+
+\begin{equation}
+\begin{split}
+    & \mathcal{L}^{t} = \sum_{i=1}^{N} \ell (y_{i}, \hat{y}_{i}^{(t-1)} + f_{t}(x_i)) + \Omega(f_t) \\
+   &  \Longleftrightarrow \\
+    & \mathcal{L}^{t} = \sum_{i=1}^{N} [g_i f_t(x_i) + \frac{1}{2} h_i f_t^{2}(x_i)] + \Omega(f_t)
+\end{split}
+\end{equation}
+
+where $\hat{y}_{i}^{t}$ denotes the prediction of the i-th observation at the t-th iteration, $g_i$ the gradient (first-order derivative), and $h_i$ (second-order derivative).
+
+\
+\
+
+*Sources*
+
+* *Tianqi Chen and Carlos Guestrin, XGBoost: a scalable tree boosting system, Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining, 2016.*
+
+* *Jerome H Friedman, Greedy function approximation: a gradient boosting machine, Annals of statistics, 2001.*

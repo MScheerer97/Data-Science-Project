@@ -1,0 +1,80 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+<center> <h1> **Sitemap**</h1> </center>
+
+- **Introduction** <br>
+In the **Use Case** tab, we supply the user with a short guide on how to use this application and its features, and define the main target groups. Moreover, we provide a short **Literature** review and motivate academic interest. Finally, we outline the **Data Sources** with all the different data acquisition methods applied. 
+
+- **Information** <br>
+To start, we display all the different fruits and vegetables that are part of our analysis in the **Food Items** tab. More detailed information can be accessed in the following tab, **Type, Size and Country**, where the user can explore items and their subtypes, different sizes and countries of origin. The **Nutrition and Footprint** section enables the user to compare different items with regards to their nutrients or their ecological footprints. Finally in the **Cluster Analysis** all the fruits and vegetables are grouped into segments by comparing them regarding criteria set by the user. 
+
+- **Variable Development** <br>
+Here we differentiate between **Price Development** and **Predictor Development**. In the former, we perform profound exploratory data analysis by applying various data visualization techniques and display the time series of the different prices by items and markets. In the latter, the user can gain further information about the time series of all the potential determinants of the prices and obtain insights regarding the relationship between the prices and the features. 
+
+- **Econometric Analysis** <br>
+To complement the previous section of descriptive statistics and exploratory data analysis, we also implement a **Regression Analysis** to get a better understanding of the relationships between the prices and the independent variables by examining point estimates and their statistical significance. The **Correlation Analysis** accompanies the econometric analysis by uncovering correlated predictor variables. 
+
+- **Price Prediction** <br>
+To achieve the main goal of this application, the user is enabled to discover in-depth knowledge about the **Theory** of the machine learning algorithms and their **Hyperparameters**. We outline how **Predictive Performance** can be calculated and display the results for all the different models of any item-market combination. To get insights about the influence of features on the predictions, we supply the user with information about **Feature Importance**. Finally, the **Price Prediction**  allows a comparison between different models or items across markets and serves as a prediction tool for prices in the upcoming one to four weeks. By comparing different models, the user learns which algorithm is suitable for the prediction task in our application.
+ 
+- **Food Basket** <br>
+The last section, **Item Choice**, provides a useful tool for the user by assisting with the creation of a food basket based on individual preferences. Based on the users preferences regarding the nutrition or the environmental impact of growing the items, a final item selection can be made. Based on the final list, the user obtains information on its nutrient values and total price. To complement this tool, the tab **Price Analysis and Recommendation** informs the user about potential price developments in the upcoming weeks and assists with the buying decision.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+**How to use this part of the RShiny App: **
+
+In this tab, the general influence of the weather variables on price is given.

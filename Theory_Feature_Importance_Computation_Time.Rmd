@@ -1,0 +1,57 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!-- The estimated computation time is based on the number of observations. -->
+<!-- We calculated the feature importance for fruits and vegetables with  -->
+<!-- different computation times, and made the aggregation. -->
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+In this table you can inform yourself about the expected approximated computation
+time of each fruit and vegetable (food model):
+
+\
+
+
+```{r pressure, echo=FALSE, warning=FALSE, message = FALSE}
+library(dplyr)
+library(knitr)
+
+df_ML_raw <- readRDS("output/final_ML.rds")
+knitr::kable(
+  df_ML_raw %>% 
+  group_by(food) %>% 
+  count() %>% 
+  arrange(n) %>%
+  mutate(
+    `Expected Computation Time` = if_else(
+      n < 1000, "1 minute", if_else(
+        n >= 1000 & n < 3000, "3 minutes", if_else(
+          n >= 3000 & n < 6000, "5 minutes", if_else(
+            n >= 6000 & n < 1000, "10 minutes", "20 minutes"
+          )
+        )
+      )
+    )
+  ) %>%
+  dplyr::arrange(food) %>%
+  dplyr::rename('Fruit/Vegetable' = food) %>%
+  dplyr::select(-n)
+) 
+
+```
+

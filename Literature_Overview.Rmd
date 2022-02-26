@@ -1,0 +1,102 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+Predicting prices of agricultural products is of huge interest in the literature.
+First approaches in identifying factors influencing fruit and vegetable prices
+started in the 1920's (for instance, see Waugh, 1928). \
+In the literature prices of agricultural products are mainly predicted to help
+farmers decide on the type and amount of agricultural products to plant. 
+In our analysis, however,
+we predict fruit and vegetable prices to help the customers to plan their
+purchases. To our knowledge the literature does not cover this perspective.
+Moreover, studies on fruit and vegetable price predictions mainly focus on 
+specific food items as well as Asian countries. To our knowledge, a study
+predicting 23 different kinds of fruit and vegetables of different types, sizes, and
+from different countries does not exist so far. Moreover, we could not find any study
+that predicts fruit and vegetables prices for the German market. Additionally,
+high ranked journals seem to miss studies on price predictions of agricultural products.
+Nevertheless, our choice of predictors as well as the prediction methods are oriented at the
+existing literature.
+
+\
+
+It seems that the most common approach to predict prices of agricultural products
+are neural networks following statistical models (ARIMA, SARIMA, BSTS). Both
+seem to be perform equally. However, time series models seem to perform better
+for short-term forecasting while neural networks achieve a higher predictive
+accuracy for long-term forecasts. Machine learning methods are less popular in the literature
+for price predictions of agricultural products. 
+
+\ 
+
+According to the literature, factors which affect fruit and vegetables prices 
+are the following:
+
+* **Weather**: temperature, sunshine, precipitation (Jin-shan and Xiang-tian, 2011)
+
+* **Transport costs**: Gasoline prices (Abbott et.al, 2019)
+
+* **Cultivation costs**: fertilizer prices (Abbott et.al, 2019)
+
+* **Season** (Jin-shan and Xiang-tian, 2011)
+
+* **Macroeconomic Factors**: Exchange rates, inflation rates, crude oil prices, global recessions (Abbott et.al, 2019)
+
+\
+
+Nevertheless, predicting prices of agricultural products, or food prices in
+general, is a challenging task as the prices still depend on many unknowns. Moreover,
+the prices are unstable and change quickly due to natural climate and other events.
+The difficulty in predicting food prices is visible in the performance analysis
+of various studies. Generally,
+the performance measures depend on the specific fruit and vegetable used to
+make the prediction as well as the underlying data.
+
+Yoo (2016) predicts prices of onions and dried red pepper for the Korean wholesale market using a Bayesian Structural Time Series Model. For onions, a MAPE of 48,06% is achieved using a pure-time series model considering only seasonality and trend but no predictors. Including climate factors decreases the MAPE to 34,86%. For dried red pepper, the predictive accuracy is substantially better with a MAPE of 13,17% for the pure-time series model and 7,63% for the BSTS with climate factors. 
+
+Jha and Sinha (2013) predict the prices of soybeans and Rapeseed-mustard one month ahead for the Indian wholesale market using a specification of Neural Networks (a Time-Delay Neural Network). They report a RMSE of 4.79 for mustard and 33.90 for soybeans.
+Using a wavelet neural network Zhang et. al (2014) predict daily tomato prices for the Chinese market with
+an prediction error rate of only 0.01 Yuan. 
+
+\
+
+\
+
+*Sources*
+
+
+* *Abbott, P. C., Hurt, C., & Tyner, W. E. (2008), What's driving food prices?, 2019*
+
+* *Jha G. K. and Sinhab K., 2013, Agricultural Price Forecasting Using Neural Network Model: An Innovative Information Delivery System*
+
+* *Shukla, M., & Jharkharia, S. (2013). Applicability of ARIMA models in wholesale vegetable market: An investigation. International Journal of Information Systems and Supply Chain Management*
+
+
+* *Sussy Bayona-Ore, Rino Cerna, and Eduardo Tirdao Hinojoza, Machine Learning for Price Prediction for Agricultural Products, Wseas Transactions on Business and Economics, 2021*
+
+
+* *Frederick V. Waugh, Quality Factors Influencing Vegetable Prices, Journal of Farm Economics, 1928*
+
+
+* *ZHANG Jin-shan and XIE Xiang-tian, Study about Forecasting of Vegetable Prices Based on Neural Network, Applied Mechanics and Materials, 2011*
+
+
+* *Yoo, D.I., 2016, Vegetable Price Prediction Using Atypical Web-Search Data*
+
+

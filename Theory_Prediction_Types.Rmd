@@ -1,0 +1,39 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+
+<!-- In the prediction task, we distinguish between the full and food model: -->
+
+<!-- * **Full Model**: One model for all food-type-size-country combinations. In this model, we assume -->
+<!-- that the features' impact is the same for all food types. Hence, this model is only trained for -->
+<!-- the more complex algorithms which can identify interaction effects on their own. Precisely, -->
+<!-- the full model exists for the random forests, XGBoost, SVM and Neural Network.  -->
+
+In this tab, the user can make price predictions for the upcoming weeks one to four.
+To do so, the user can select between a variety of models and five wholesale markets
+in Germany. In addition, the user needs to specify the type of food for which he or she
+wants to make the predictions.
+
+The models' predictions are based on the so called *food model* in order to
+avoid homogeneous effects. More precisely, 
+one separate model for each food item is trained. For the BSTS model, we train
+one separate model for each food-type-size-country information. 
+
+
+<!-- Nevertheless, both models perform similarly as the differences in predictive accuracy are minor. -->
+

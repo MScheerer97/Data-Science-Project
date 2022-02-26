@@ -1,0 +1,77 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+How to use the tabs: **Past Prices Comparison & Future Price Recommendation **
+
+* When opening the tabs *Future Price Recommendation* and *Past Prices Comparison* the Selection Fields will all be empty. As a default, the tables with data display all fruits/ vegetables in the data set. 
+
+* It is *up to you* to filter for certain foods/ types. You can just click to see e.g. the lowest prices for all Apples on all markets. Or you can filter down to specific food-type-size-combinations, or you can get the lowest price just for German fruits/vegetables. \
+
+**By not pre-specifying any inputs, we want you to have the largest possible comparison e.g. across markets, countries, fruits/ vegetables, sizes etc.**
+
+**Goal of the tab "Price Recommendation" **
+
+One very important Use Case of this App is the Price Prediction. However, another important **Use Case** is how those prices compare to past prices, and how much information consumers can retrieve from the predicted prices.
+
+This is exactly the gap that this tab fills. We want to set our predicted price in relation to the whole price analysis. In order to understand this point, it is key to understand how consumers see prices.
+
+**Intersection of Data Science and Business**
+
+From a Business/ Marketing perspective it is important to note:
+
+* Consumers evaluate prices **not in absolute terms**, but relative to a **reference price**
+
+Reference prices can be based on:
+
+* Past prices
+
+* Prices of other products
+
+* Prices in other stores
+
+* External reference prices
+
+* Expected prices
+
+In this Shiny App and especially in this tab, we complement those points with **two new interesting dimensions**:
+
+* Consumers can now evaluate reference prices on **future** prices and the **optimal time-point** of the lowest price. As we have the predictions for the next 4 weeks, we will tell the consumer exactly in which of the next 4 weeks the price is going to be the lowest. This is done in the sub tab *Future Price Recommendation*.
+
+* However, the best absolute minimum price is only one part of the equation. The other part of the equation is how those **minimum best week prices compare to past prices** for the given food-type-size-combination. This analysis is seen in the tab *Past Prices Comparison*.
+
+Here *past prices* refers to the prices *one month* and *one year* before the predicted prices in the next four years. So If the date of the price for a given food-type-size-combination in 1 week is the 24th of January 2022, the past prices will be calculated as follows: \
+
+* For one month: The average price from the 24th December of 2021 to the  24th of January 2022. \
+* For one year: The average price from the 24th January of 2021 to 24th January 2022. \
+
+In order to compare the predicted prices with past prices, we use a traditional rate formula for prices. The price increase/ decrease will be done in rates so we can use percentages.
+
+The price rate $R_{it}$ for a given time-point $t$, for a food-type-size-combination $i$ is calculated as follows: \
+
+<p style="text-align: center;">*Price Rates*: $R_{it} = (P_{it}-P_{it-1}) / P_{it-1}$ </p> 
+<br>
+For example: If one month is selected, we take the predicted price of the 24th of January 2022, subtract it with the price of the 24th of January 2021 and divide with the price on the 24th of January 2021.
+
+Consequently, you can get the price increase/ decrease in percent and get a "closer" feeling, whether the future price is a good perceived reference price or whether purchasing at a later time suits you better.
+
+* By giving the consumer the optimal time-point for buying and past reference prices, we try to indirectly (not directly) influence/ recommend to you to buy certain fruits/ vegetables. We expand the consumers reference price information, however we do not print any messages e.g. "Buy now", to allow consumers to make their own choice and let them decide for themselves whether a price increase of 5% or price decrease in 10% is worth buying a certain product.
+
+
+
+
+

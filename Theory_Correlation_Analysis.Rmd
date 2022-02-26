@@ -1,0 +1,46 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+**How to use this part of the RShiny App: **
+
+In this tab a **correlation matrix plot** is displayed. The variables are based on your selection in the Tab *"Regression Analysis"*.
+
+The **correlation** measures the **linear** relationship between two variables. The Pearson-correlation coefficient is used to assess this relationship. The correlation coefficient normalizes the covariance with the standard deviations of the two variables.
+
+<p style="text-align: center;">*Correlation coefficient*: $r=\frac{ \sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y}) }{\sqrt{\sum_{i=1}^{n}(x_i-\bar{x})^2}\sqrt{\sum_{i=1}^{n}(y_i-\bar{y})^2}}$ </p> 
+<br>
+
+where 
+
+* n is the sample size
+* $x_i$, $y_i$, are the single samples indexed with $i$
+* $\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i$ (the sample mean), and analogously for $\bar{y}$
+
+**Interpretation**
+
+* A correlation coefficient ranges from -1 up to 1, and can take on the value 0
+* A correlation coefficient of 1 suggests the largest possible positive relationship 
+* A correlation coefficient of -1 suggests the largest negative relationship
+* A correlation coefficient of 0 suggests no linear relationship at all
+
+* Of course, there are values in between -1 and 1, in this case one can interpret (as a rule of thumb) as follows:
+  * A correlation coefficient of 0 - 0,3 suggests a *weak* linear relationship
+  * A correlation coefficient of 0.3 - 0,6 suggests a *moderate* linear relationship
+  * A correlation coefficient of 0.6 - 1 suggests a *strong* linear relationship
+
+It is important to acknowledge that the correlation measures the linear relationship between them and does not meausre possible non-linear effects!

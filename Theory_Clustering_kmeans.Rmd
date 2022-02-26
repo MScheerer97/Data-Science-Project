@@ -1,0 +1,84 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+
+K-means clustering is a widely used and simple unsupervised machine learning algorithm
+which groups similar observations together. Or in other words it
+partitions a data set into $K$ non-overlapping, distinct clusters.
+
+$C_1 \dots C_K$ are sets containing the observations' indices in each cluster. The within-cluster variation for cluster $C_K$, $W(C_K)$, is a measure of the amount by which the observations within a cluster differ from each other. K-means clustering is based on the idea of dividing the observations into $K$ cluster so that the within-cluster variation across all $K$ clusters is minimized:
+
+$\underset{C_1 \dots C_k}{\min} \sum_{k=1}^K W(C_k)$
+
+where the within-cluster variation is based on the pairwise squared Euclidean distances between the observations in cluster $k$:
+
+$W(C_k) = \frac{1}{|C_k|} \sum_{i, i' \in C_k} \sum_{j=1}^p (x_{ij} - x_{i'j})^2$
+
+The K-means clustering algorithm provides a *local* optimum to this minimization problem. The algorithm works as follows:
+
+1. Initial cluster assignments for the observations by randomly assigning a number between 1 and $K$ to each of the observations.
+
+2. Iterate until the cluster assignments do not change anymore, i.e., until convergence:
+  (a) Cluster centroids are computed for each of the $K$ clusters. 
+  (b) Each observation is assigned to the cluster whose centroid is the closest according to the Euclidian distance. 
+  (c) The cluster centers are set to the mean. 
+  
+  
+Note that the obtained results depend on the initial (random) cluster assignment of each observation in Step 1 of the K-means clustering algorithm. 
+
+\
+
+The number of clusters $K$ need to be selected by the researcher:
+
+* $K$ can be specified by priori knowledge. For instance, by prior research on how many clusters exist. 
+
+* $K$ can be specified using a variety of $K$-value selection algorithms, for instance the elbow method, gap statistic, average silhouette method, and canpoy. 
+
+
+In the app, the user can select to choose the value of $K$ manually or automatically. 
+In the latter case, the silhouette method is used to define the optimal number of clusters. 
+In both cases, the maximum number of clusters that can be chosen is $K = 8$ for fruits
+and $K = 10$ for vegetables. The numbers are chosen according to the number of fruits
+and vegetables included in the data set.  $nstart$, the number of initial configurations,
+is set to 25 (recommended approach). 
+
+
+\
+
+Since the k-means clustering algorithm is a distance-based algorithm, it is dominated by
+features with numerically larger values. Thus, feature scaling is paramount
+as it ensures that all features contribute equally to the distance calculation. To
+account for this, we apply z-score standardization to the features. 
+
+\
+
+In this app, k-means clustering can be applied to both fruits and vegetables.
+They can be grouped using three categories: nutrition, footprint, and mean price.
+The mean price refers to the average price for the fruits or rather vegetables
+across all five wholesale markets. 
+
+\
+
+*Sources:*
+
+* *Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, An Introduction to Statistical Learning with Applications in R, Second Edition, 2021*
+
+* *Chunhui Yuan and Haitao Yang, Research on K-Value Selection Method of K-Means Clustering Algorithm, Multidisciplinary Scientific Journal, 2019*
+
+* *Stefan Mayer, Winter Term 2020/21, ML Applications in Business and Economics*

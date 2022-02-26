@@ -1,0 +1,151 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+**Useful information for the Usage of this tab**
+
+Apart from the other tabs, the regression analysis uses **abbreviated variable names** to facilitate the understanding of the regression table and to not overwhelm the user with large variable names.
+
+To avoid interpretation mistakes, this list gives you the abbreviated names and their meaning:
+
+* *price_(H, M, B, K, F)* denote the price in the respective markets: Hamburg, Munich, Berlin, K = Cologne and Frankfurt \
+* The respective lag e.g. *lag_1_month* denotes a time lag of 1 month, with other time points same meaning
+* *dev* denotes the *Deviations* of the weather variables from their normal values \
+* *precip* denotes *Precipitation* \
+* *wci* denotes *World Container Index* \
+* *TSP* denotes *Triple Superphosphate* \
+* *DAP* denotes *Di-ammonium Phosphate* \
+* *Urea* denotes *Urea Fertilizer* \
+* *Potassium_chloride* denotes *Phosphorite* \
+
+**The units of all variables are as follows:**
+
+**Market Prices**
+
+All Prices on all markets are given in EURO/KG
+
+**Transportation**
+
+"World Container Index in EURO/KG" 
+
+"Crude Oil Price in EURO/L" 
+                          
+"Kerosene Price in EURO/L" 
+                          
+"Diesel Fuel Price in Germany in EURO/L" 
+
+**Fertilizer**
+                          
+"Triple superphosphate in EURO/MT" 
+                          
+"Di-ammonium Phosphate in EURO/MT" 
+                          
+"Urea Fertilizer in EURO/MT" 
+                          
+"Phosphorite in EURO/MT" 
+                          
+"Potassium Chloride in EURO/MT" 
+
+**Economic Variables**
+                          
+"Exchange Rate South Africa in South African Rand/EURO" 
+                          
+"Exchange Rate Turkey in Turkish Lira/EURO" 
+                          
+"Exchange Rate New Zealand in New Zealand Dollar/EURO" 
+                          
+"Inflation in Germany in %" 
+                          
+**Objective & General Information **
+
+Objective: In this tab, a **multiple linear regression** is used to assess the effect of the predictors on market prices. This regression is used more for **exploratory data analysis-purposes** rather than understanding a possible causal relationship. It is useful to get the **sign** and the **size** of a predictor on the market prices. It can also be understood as a **Sanity check** to look whether our data is complete and not biased or simply wrong. We purposely avoid using Fixed-Effects, as it changes the regression coefficients and will not be comparable to the Machine Learning algorithms. It is also important to note that we use a log-log specification. This means, that we take the log of both the independent- and the dependent variable. We do this for multiple reasons: First, we get elasticities, a dimensionless measure that is comparable across food, types, countries etc. And we get a percentage interpretation which is more intuitive e.g. 1% change in Fuel Prices causes a 1% increase in market prices. A lot of variables in our data set have units that are not actively understood and known to human beings e.g. the humidity measured with a hygrometer in grams per kg, Wind speeds measured in m/s, precipitation in millimeters and cloud cover is measured in oktas. We assume that the "average" user does not understand what e.g. amount of oktas is large and what is small. Here, the percentage interpretation allows a better and real understanding of the relationship.
+
+Before, we explain our specific regression model we use, it is key to understand the general idea of a *linear regression model*.
+
+**General explanation: Linear regression model**
+
+The general idea of a multiple linear regression is to model the relationship between a dependent variable $Y_i$ and multiple independent variable (in this case one independent variable $X_i$). However, our model rarely predicts the outcome variable with 100% certainty, therefore our model will always have an error $\epsilon_i$.
+
+<p style="text-align: center;">*General form*: $Y_i = \beta_0 + \beta_1 X_i + \epsilon_i$ </p> 
+<br>
+
+Of course, we estimate a linear regression model with population data:
+
+<p style="text-align: center;">*Estimated form*: $\hat{Y}_i = \hat{\beta}_0 + \hat{\beta}_1 X_i + \hat{\epsilon}_i$ </p> 
+<br>
+
+The regression is fitted through the data my minimizing the sum of squared residuals:
+
+<p style="text-align: center;">*Sum of squared residuals*: $e_i=\sum_{i}(y_i-\hat{y}_{i})^2$ </p> 
+<br>
+
+The coefficient $\beta_1$ is calculated as follows:
+
+<p style="text-align: center;">*Estimation of coefficients*: $\hat{\beta}_1 = \frac{\sum(X_i – \bar{X}) (Y_i – \bar{Y})} {\sum(X_i – \bar{X})^2}$ </p> 
+<br>
+
+The intercept $\beta_0$ is calculated as follows:
+
+<p style="text-align: center;">*Estimation of intercept*: $\hat{\beta}_0 = \bar{Y} – \hat{\beta}_1 \bar{X}$ </p> 
+<br>
+
+The standarrd deviation is calculated as follows:
+
+<p style="text-align: center;">*Estimation of standard deviation of a coefficent*: $\hat{\sigma}{_\hat{\beta_1}{}} = \frac{\hat{\sigma}} {\sqrt{\sum(X_i – \bar{X})^2}}$ </p> 
+<br>
+
+**The starting regression model is this tab:**
+
+$log(Price_{it}) = \beta_0 + \beta_1 log(Temperature_{it-3}) + \beta_2 log(Humidity_{it-3}) + \beta_3 log(Precipitation_{it-3}) + \beta_4 log(Windspeed_{it-3}) + \beta_5 log(Cloudcover_{it-3}) + \epsilon_{it}$ 
+
+where $t$ denotes the time point, and ${t-n}$, the n respective time lags. The index $i$ denotes a certain food-type-size-country-combination.
+
+**Assumptions of the linear regression model**
+
+1. Correct linear specification: the model describes a linear relationship between y and x
+
+2. Linear independence of regressors: there is no (exact) linear relationship among any of the x in the model
+
+3. Exogeneity: Expected value of the error is not a function of x
+
+4. Homoscedasticity and non-autocorrelation: The error has constant variance and its elements are uncorrelated
+
+5. Normal distribution: Error is normally distributed
+
+**How do I use this tab?**
+
+Goal: Fit a multiple linear regression to our data assess get a log-log-interpretation of the predictors on the dependent variable.
+
+There are eight Inputs that you can manipulate: \
+
+1. The first five Inputs select the specific food-type-size-country-combination \
+
+2. In the 6th-field, you can filter the date. The first selected date denotes the new starting filtering date, the second one the last filtering date \
+
+3. In the 7th-filed, you can select the market, where we get the price for the selected food-type-size-combination. This will be the dependent variable of the regression \
+
+4. The last field, you can select the independent variables that should be considered in the regression \
+
+As an Output, you will get: \
+
+* A regression table with the coefficients, their significance values as well as advanced summary statistics e.g. the coefficient of determination, the adjusted coefficient of determination, residuals standard errors, and the F-Statistic.
+
+* A normal table, that coverts the coefficients of the regression table in easy and interpretable values by multiplying by 100%.
+This is done to get an easier look at the effect of the predictors and to navigate users that do not have much experience in interpreting regression tables.
+
+

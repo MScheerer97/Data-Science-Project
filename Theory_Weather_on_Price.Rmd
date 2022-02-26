@@ -1,0 +1,51 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+**How to use this part of the RShiny App: **
+
+Goal: Assess the multi-item effect of the temperature variables on market prices. On each level, from top to bottom, one can assess the effect of the weather variables, including deviations (for more information look at Tab *Weather Analysis*) on market prices. As a result, one can get the general effect of weather on market prices for both vegetables and fruits, or only fruits. One can further go down to specific fruits-type-sizes-countries combinations and either assess their effect alone or in combination with the other grouping variables and their respective heterogeneity. Also can research whether there are price premiums that are irrespective of the weather & weather deviations.
+
+In this tab, pre-defined choices are not given. You must manually select your choices of Inputs!
+
+There are seven Inputs that you can manipulate: \
+
+1. Select Fruits or Vegetables \
+
+2. Select specific fruits/ vegetables \
+
+3. Select countries \
+
+4. Select different Types of Food e.g. Boskoop Type of Apple's \
+
+5. Select weather variable for graph, of which we evaluate the effect on market prices \
+
+6. Select market \
+
+7. Select weather you want to get a whole overview over all year or look at each year separately \
+
+As an Output, you will get: \
+
+* When *Overall* is selected, you get a graph of the overall relationship between your chosen weather variable and the market prices for *all* years
+
+* When *Yearly* is selected, you get a graph of the  relationship between your chosen weather variable and the market prices *for each year separately*
+
+When you want to discover new meaninful insights, press on the *refresh* button and everything will be set back to no selection.
+
+
+
+

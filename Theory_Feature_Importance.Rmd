@@ -1,0 +1,90 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+
+In this tab, the user can explore which variables are probably most useful for 
+the price prediction task. The feature importance scores are estimated 
+for the trained food model. 
+
+Information on the feature importance is provided for two models:
+
+* LASSO Regression
+
+* XGBoost
+
+The feature importance estimates should be interpreted with caution.
+Most importantly, they do not indicate any causality. Instead, 
+they allow the user to get an idea what features seem to be paramount
+for the prediction task. 
+
+\
+
+
+#### Feature Importance via LASSO
+
+The LASSO regression can be used for feature selection as in this regression
+the coefficient of relatively unimportant features is set to be 0. The 
+importance score of each feature can be considered as the absolute value
+of its coefficient. 
+
+\
+
+#### Feature Importance via XGBoost 
+
+A single decision tree is highly interpretable as it can be easily visualized. 
+Ensemble methods like XGBoost lose this feature. However, fortunately the trained
+model can be used to get the relative importance or contribution of each predictor variable
+in predicting the outcome. 
+
+\
+
+
+In this analysis, two possibilities to calculate the importance value are considered: 
+gain and permutation importance.
+
+* **Gain** is the default type of importance. It shows the improvement in predictive accuracy brought by splitting a branch on this feature. The higher the value for this importance score, the more important is the features for generating a prediction. 
+The importance score is calculated for a single decision tree. To do so, the amount that each feature
+split point improves the models' performance 
+is weighted by the number of observations in the node. To obtain the final importance
+score the scores from each single decision tree are averaged. Note that this type of feature importance may be biased as it favors numerical features over
+dummy variables or categorical features with a small number of possible categories. 
+
+* The **permutation** feature importance was introduced by Breiman (2001) for random forests. However, it can be applied to XGBoost as well. For the permutation importance, the feature values are randomly permuted in the training data. This destroys any relationship between the predictor and outcome variable. Then, the change in the model's performance
+is computed using the RMSE as an evaluation criterion. The features which increase the model error the most are paramount as the model relied on 
+those features in making the prediction. Conversely, features are unimportant if shuffling their values do not change the model error because in this case
+the model did not consider the feature for the prediction. The user should be informed that by shuffling the data randomness is added to the measurement. Hence, repeating the permutation may yield a completely different result. Thus, the permutation is usually repeated and the resulting importance scores are averaged over the repetitions which stabilizes the measure greatly. As this increases the computation time greatly, in our analysis only two 
+repetitions are conducted. Moreover, the results of the permutation feature importance should be interpreted with caution if strongly correlated features are included in the set of predictors. Assuming one has calculated feature importance on uncorrelated features. Variable X was identified of being very important. Next, you include a predictor Z which is strongly correlated with predictor X. Calculating the feature importance again reveals that X is not on the top of the feature importance anymore. This is because the model can now rely on Z as well. In other words, X and Z share the importance 
+now, even thought both may actually be important. This problem is addressed by clustering highly correlated features and keeping only one feature from each cluster. However, this is out of the scope of this project. 
+
+\
+
+\
+
+*Sources*
+
+* *Trevor Hastie, Robert Tibshirani, and Jerome Friedman, The Elements of Statistical Learning, Data Mining, Inference, and Prediction, Springer, Second Edition, 2017* 
+
+* *Christoph Molnar, Interpretable Machine Learning A Guide for Making Black Box Models Explainable, 2022*
+
+* https://towardsdatascience.com/feature-selection-in-machine-learning-using-lasso-regression-7809c7c2771a#:~:text=In%20Lasso%20regression%2C%20discarding%20a,a%20coefficient%20different%20from%200. (last access on 11th February, 2022)
+
+* https://towardsdatascience.com/be-careful-when-interpreting-your-features-importance-in-xgboost-6e16132588e7 (last access on 31st January, 2022)
+
+* https://machinelearningmastery.com/feature-importance-and-feature-selection-with-xgboost-in-python/ (last access on 11th February, 2022)
+
+* https://scikit-learn.org/stable/modules/permutation_importance.html (last access on 31st January, 2022)

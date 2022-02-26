@@ -1,0 +1,39 @@
+---
+title: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<style>
+body {
+text-align: justify;
+background-color:black;
+color:white;}
+</style>
+
+\
+
+When assembling the food basket, the user can choose which items based on the price per 1kg per item, the carbon and the water footprint and up to three nutrients. For the footprints and the nutrients, the metric data was transformed to an ordinal scale from *Low* to *High*, indicating whether the footprints and the nutrition level is relatively low, medium or high. 
+
+To achieve this, we computed the upper and lower quartile for all individual nutrients and footprints. Values below the lower quartile were considered as *Low*, values in between the quartiles as *Medium* and values above the upper quartile were coded as *High*.
+
+The user can select three different filter systems: *None*, in essence free choice, *Nutrition*, filtering by nutrition values, and *Footprint*, filtering by footprint values. Additionally, the final choice is always restricted by the maximum price chosen and excluded items.
+
+Based on the selection, only those items will be offered that match the user's preferences. For the nutrition filter method, we differentiate between *good* and *bad* nutrients. For the *bad* nutrients **Sugar** and **Total Lipid**, the filter shows only items with *Low* values if *Low* is selected. If *Medium* is chosen, also items with a *Low* value are shown. The same applies to the footprint filter system. However, for *good* nutrients, the system works the other way round. If *High* is selected, only food items with *High* values are displayed.
+
+Furthermore, information about the recommended daily (or weekly) nutrient intake can also be used to evaluate the created basket. We here differentiate between the PAL Level (Physical Activity Level), Age Group and Gender. Hence, based on your selection, the recommended nutrient intake differs.
+
+\
+\
+
+*Sources*
+
+* *https://www.dge.de/wissenschaft/referenzwerte/energie/?L=0*
+* *https://flexikon.doccheck.com/de/PAL-Wert*
+* *https://www.dge.de/wissenschaft/weitere-publikationen/fachinformationen/obst-und-gemuese-die-menge-machts/*
+* *https://www.apotheken-umschau.de/gesund-bleiben/ernaehrung/vitamin-b6-pyridoxin-711961.html*
+* *https://www.dge.de/presse/pm/empfehlung-zur-maximalen-zuckerzufuhr-in-deutschland/*
+* *https://www.dge.de/presse/pm/cholesterinwerte-im-griff/*
